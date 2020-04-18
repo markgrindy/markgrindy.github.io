@@ -33,7 +33,7 @@ input, button, textarea, select { font: inherit; }
 
 :root { --black: #222; --white: white; --blue: #2b64a9; --yellow: #FAFF00; --red: #E56262; --a: var(--blue); --ahover: #5d81ad; --h2bg: #ccc; }
 
-body { color: var(--black); font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif; font-size: 1.125em; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word; }
+html, body { color: var(--black); font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif; font-size: 1.125em; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word; }
 
 body a { color: var(--a); text-decoration: underline; }
 

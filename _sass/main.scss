@@ -1,3 +1,130 @@
+// GENERAL STYLES
+
+:root{
+	--black: #222; // #030A01;
+	--white: white;
+	--blue: #2b64a9;
+	--yellow: #FAFF00;
+	--red: #E56262;
+	--a: var(--blue);
+	--ahover: #5d81ad;
+	--h2bg: #ccc;
+}
+
+body {
+  color: var(--black);
+  font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif;
+  font-size: 1.125em;
+  overflow-wrap:break-word;
+  word-break:break-word;
+  word-wrap:break-word;
+}
+
+body a {
+  color:var(--a);
+  text-decoration: underline;
+  // font-size: 1.125em;
+}
+
+body a:hover {color:var(--ahover);}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  font-size: 1em;
+  margin: 0 12.5px;
+  // max-width: 989px;
+}
+
+@media screen and (min-width: 612.5px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// NAVIGATION MENU
+
 .current {
   color: green;
+}
+
+// SEARCH ELEMENTS
+
+.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+  border-color: var(--black) !important;
+  background-color: var(--black) !important;
+  background-image: none;
+  filter: none;
+}
+
+.gsst_a .gscb_a {
+  color: #999 !important;
+}
+
+// HEADINGS
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+// POSTS
+
+.post-caption {
+  color: grey;
+  font-size: .8em;
+  margin-top: .25em;
+  line-height: 1em;
+}
+
+img, .post-image {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+p {
+	// text-align: justify;
+}
+
+p + p {
+margin-top: 1em;
+// text-indent: 2em;
+}
+
+// SEARCH
+
+.gcsc-find-more-on-google-text, .gcsc-find-more-on-google-magnifier, .gcsc-find-more-on-google-query {
+  display: none !important;
+}
+
+.gsc-webResult.gsc-result:hover {
+  border-width: 0 !important;
 }

@@ -17,3 +17,32 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+title: "Mark Grindy"
+tagline: "Project reports"
+description: "Mark Grindy's project reports."
+url: "https://markgrindy.github.io" # the base hostname & protocol for your site
+# author:
+twitter:
+  username: markgrindy
+  card: summary
+# facebook:
+#   facebook:app_id - a Facebook app ID for Facebook insights
+#   facebook:publisher - a Facebook page URL or ID of the publishing entity
+#   facebook:admins - a Facebook user ID for domain insights linked to a personal account
+# logo: /assets/logo.png
+# social:
+#   name: Ben Balter
+#   links:
+#     - https://twitter.com/BenBalter
+#     - https://www.facebook.com/ben.balter
+#     - https://www.linkedin.com/in/BenBalter
+#     - https://github.com/benbalter
+#     - https://keybase.io/benbalter
+# google_site_verification: 123456789 # for verifying ownership via Google webmaster tools
+lang: en_US

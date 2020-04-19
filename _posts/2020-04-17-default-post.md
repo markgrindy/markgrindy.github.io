@@ -3,7 +3,9 @@ author: mark
 title: The title of the post, page, or document
 description: A short description of the page's content
 image: https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
-caption: A description of the image. 
+caption: A description of the image.
+image-credit: asogetti/Unsplash
+image-credit-link: https://unsplash.com/photos/GYr9A2CPMhY
 ---
 Lorem ipsum dolor sit amet, [consectetur](https://www.wsj.com "WSJ") adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed felis eget velit aliquet. Cras ornare arcu dui vivamus arcu felis bibendum ut. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Amet massa vitae tortor condimentum lacinia quis. Eget duis at tellus at urna condimentum. Sit amet aliquam id diam maecenas ultricies. Sociis natoque penatibus et magnis dis parturient montes nascetur. Maecenas ultricies mi eget mauris pharetra et ultrices. Purus gravida quis blandit turpis cursus in. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Nisi scelerisque eu ultrices vitae auctor eu. Convallis tellus id interdum velit laoreet. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Elit at imperdiet dui accumsan. Donec ultrices tincidunt arcu non sodales neque sodales ut. Scelerisque eu ultrices vitae auctor eu augue ut.
 
@@ -15,7 +17,13 @@ Non arcu risus quis varius. Orci a scelerisque purus semper eget duis at tellus.
 
 Id diam vel quam elementum. Ante metus dictum at tempor commodo ullamcorper.
 
+![alt text](https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80 "Testing this part.")
+*It's a caption! [with image/Credit](/)*
+
 Sed viverra tellus in hac habitasse platea dictumst vestibulum. Cursus vitae congue mauris rhoncus aenean vel elit. Viverra nam libero justo laoreet sit amet. Nam at lectus urna duis convallis convallis tellus id.
+
+<img src="https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"/>
+*It's another caption!*
 
 Ullamcorper velit sed ullamcorper morbi. Tortor dignissim convallis aenean et tortor at. Ut ornare lectus sit amet est placerat in egestas. Scelerisque in dictum non consectetur a.
 

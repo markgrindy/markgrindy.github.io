@@ -31,7 +31,7 @@ input, button, textarea, select { font: inherit; }
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
 
-:root { --black: #222; --white: white; --blue: #2b64a9; --yellow: #FAFF00; --red: #E56262; --a: var(--blue); --ahover: #5d81ad; --h2bg: #ccc; }
+:root { --black: #222; --white: #fff; --blue: #2b64a9; --yellow: #FAFF00; --red: #E56262; --a: var(--blue); --ahover: #5d81ad; --grey: #666; --lightGrey: #888; }
 
 html, body { color: var(--black); font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif; font-size: 1.125em; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word; }
 
@@ -39,9 +39,9 @@ body a { color: var(--a); text-decoration: underline; }
 
 body a:hover { color: var(--ahover); }
 
-h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { font-size: 1em; margin: 0 12.5px; }
+h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { font-size: 1em; margin: 0 20px; }
 
-@media screen and (min-width: 612.5px) { h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { max-width: 600px; margin: 0 auto; } }
+@media screen and (min-width: 620px) { h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { max-width: 600px; margin: 0 auto; } }
 
 .current { color: green; }
 
@@ -51,9 +51,15 @@ h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockqu
 
 h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 1em; }
 
-.post-caption { color: grey; font-size: .8em; margin-top: .25em; line-height: 1em; }
+h1.post-title { font-size: 1.9em; margin-top: 1em; margin-bottom: .25em; }
 
-img, .post-image { max-width: 600px; margin: 0 auto; width: 100%; }
+img + em { color: var(--grey); font-size: .8em; margin-top: .25em; line-height: 1em; font-style: normal; }
+
+img + em a { color: var(--lightGrey); font-size: .75em; text-decoration: none; }
+
+p img { margin: 0 -20px; width: 100vw; max-width: 640px; }
+
+@media screen and (min-width: 620px) { img, p img, .post-image { max-width: 600px; margin: 0 auto; } }
 
 p + p { margin-top: 1em; }
 

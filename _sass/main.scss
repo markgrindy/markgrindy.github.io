@@ -2,13 +2,14 @@
 
 :root{
 	--black: #222; // #030A01;
-	--white: white;
+	--white: #fff;
 	--blue: #2b64a9;
 	--yellow: #FAFF00;
 	--red: #E56262;
 	--a: var(--blue);
 	--ahover: #5d81ad;
-	--h2bg: #ccc;
+	--grey: #666;
+  --lightGrey: #888;
 }
 
 html, body {
@@ -44,11 +45,11 @@ blockquote,
 dl,
 dd {
   font-size: 1em;
-  margin: 0 12.5px;
+  margin: 0 20px;
   // max-width: 989px;
 }
 
-@media screen and (min-width: 612.5px) {
+@media screen and (min-width: 620px) {
   h1,
   h2,
   h3,
@@ -97,26 +98,42 @@ h1, h2, h3, h4, h5, h6 {
 
 // POSTS
 
-.post-caption {
-  color: grey;
+h1.post-title {
+  font-size: 1.9em;
+  // font-style: italic;
+  margin-top: 1em;
+  margin-bottom: .25em;
+}
+
+img + em {
+  color: var(--grey);
   font-size: .8em;
   margin-top: .25em;
   line-height: 1em;
+  font-style: normal;
 }
 
-img, .post-image {
-  max-width: 600px;
-  margin: 0 auto;
-  width: 100%;
+img + em a {
+  color: var(--lightGrey);
+  font-size: .75em;
+  text-decoration: none;
 }
 
-p {
-	// text-align: justify;
+p img {
+  margin: 0 -20px;
+  width: 100vw;
+  max-width: 640px;
+}
+
+@media screen and (min-width: 620px) {
+  img, p img, .post-image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 p + p {
 margin-top: 1em;
-// text-indent: 2em;
 }
 
 // SEARCH

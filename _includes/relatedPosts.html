@@ -1,0 +1,51 @@
+{% comment %}
+SOURCE:
+https://blog.webjeda.com/jekyll-related-posts/
+{% endcomment %}
+
+<!-- Set initial variables -->
+{% assign maxRelated = 6 %} <!-- sets max num of related articles to display -->
+{% assign minCommonTags =  1 %} <!-- default = 2 -->
+{% assign maxRelatedCounter = 0 %}
+
+<!-- Begin MAIN for loop  -->
+{% for post in site.posts %}
+
+  <!-- Set variables for MAIN forloop  -->
+  {% assign sameTagCount = 0 %}
+  {% assign commonTags = '' %}
+  {% assign allCommonTags = '' %} <!-- custom  -->
+  {% include relatedMainLoop.html %} <!-- custom, delete later? -->
+
+  <!-- Begin TAG forloop -->
+  {% for tag in post.tags %}
+
+    {% if post.url != page.url %} <!-- Exclude current page -->
+      {% if page.tags contains tag %} <!-- Skip pages without tags -->
+
+        <!-- Set variables for TAG forloop -->
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+        {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+        {% assign commonTags = commonTags | append: tagmarkup %}
+        {% assign allCommonTags = allCommonTags | append: tag | append: ", " %}
+
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if forloop.first == true %}
+    {% include relatedTagLoop.html %} <!-- custom -->
+    <h1>More on {{ tagString }}</h1>
+  {% endif %}
+
+  {% if sameTagCount >= minCommonTags %}
+    <div>
+      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+    </div>
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+
+{% endfor %}

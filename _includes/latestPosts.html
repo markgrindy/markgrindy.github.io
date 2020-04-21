@@ -1,0 +1,26 @@
+{% for category in site.categories %}
+  {% assign firstCat = category | first %}
+  {% if firstCat == site.posts.first.categories[0] %}
+    <h1 class="category-head">{{ category | first }}</h1>
+      {% for post in category.last %}
+        {% if forloop.first %}
+          {% include summaryFeature.html %}
+        {% else %}
+          {% include summarySub.html %}
+        {% endif %}
+      {% endfor %}
+  {% endif %}
+{% endfor %}
+{% for category in site.categories %}
+  {% assign firstCat = category | first %}
+  {% unless firstCat == site.posts.first.categories[0] %}
+    <h1 class="category-head">{{ category | first }}</h1>
+    {% for post in category.last %}
+      {% if forloop.first %}
+        {% include summaryFeature.html %}
+      {% else %}
+        {% include summarySub.html %}
+      {% endif %}
+    {% endfor %}
+  {% endunless %}
+{% endfor %}

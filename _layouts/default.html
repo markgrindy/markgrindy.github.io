@@ -1,16 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script async src="https://cse.google.com/cse.js?cx=000739406862659948819:75tk2uzpkon"></script>
+    {% include googleAnalytics.html %}
+    {% include searchHead.html %}
     {% feed_meta %}
     {% seo %}
   </head>
   <body>
     {% include navigation.html %}
-    {{ content }}
+    <div id="content">
+      {{ content }}
+    </div>
+    <footer>
+      {% include footer.html %}
+    </footer>
   </body>
 </html>

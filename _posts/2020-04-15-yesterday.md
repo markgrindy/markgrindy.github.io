@@ -1,5 +1,7 @@
 ---
 author: mark
+category: finance
+tags: [liteIndex, fire]
 ---
 An apple is a sweet, edible fruit produced by an apple tree.
 

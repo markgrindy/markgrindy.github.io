@@ -1,0 +1,109 @@
+
+{% assign maxTags = 6 | minus: 1 %}
+{% assign maxTagsCounter = 0 %}
+{% assign allCommonTags = allCommonTags | split: ", " %}
+{% assign allCommonTags = allCommonTags | uniq %}
+{% assign tagString = "" %}
+
+<!-- <p>allCommonTags (pre-loop): {{ allCommonTags | join: ", " }}</p> -->
+
+{% for tag in allCommonTags %}
+
+  {% if allCommonTags.size == 1 %}
+    {% assign tagString = allCommonTags[0] | capitalize %}
+    {% break %}
+  {% endif %}
+
+  {% if allCommonTags.size == 2 %}
+    {% capture tagString %}
+      {{ allCommonTags[0] | append: " and " | capitalize }}
+       {{ allCommonTags [1] | capitalize }}
+    {% endcapture %}
+    {% break %}
+  {% endif %}
+
+  {% if allCommonTags.size >= 3 %}
+
+    {% assign size = allCommonTags.size | minus: 1 %}
+
+    {% if maxTagsCounter < size %}
+      {% capture item %}
+        {{ allCommonTags[maxTagsCounter] | capitalize | append: ", " }}
+      {% endcapture %}
+      {% assign tagString = tagString | append: item %}
+    {% else %}
+      {% capture lastItem %}
+        {{ allCommonTags[maxTagsCounter] | capitalize | prepend: "and " }}
+      {% endcapture %}
+      {% assign tagString = tagString | append: lastItem %}
+    {% endif %}
+
+  {% endif %}
+
+
+
+
+  <!-- <ul>
+    <li>size: {{ size }}</li>
+    <li>current tag: {{ allCommonTags[maxTagsCounter]}}</li>
+    <li>maxTagsCounter: {{ maxTagsCounter }}</li>
+    <li>maxTags: {{ maxTags }}</li>
+    <li>allCommonTags.size: {{ allCommonTags.size }}</li>
+  </ul> -->
+
+  {% assign maxTagsCounter = maxTagsCounter | plus: 1 %}
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+  <!-- @@@TEST: playing around with variables -->
+  {% capture test %}{{ forloop.length | minus: 1 }}{% endcapture %}
+  length: {{ test }}
+  index: {{ forloop.index }} <br>
+
+  {% if forloop.index <= forloop.length %}
+    test
+  {% endif %}
+
+  <!-- @@@TEST: playing around with creating the list -->
+  {% if forloop.first == true %}
+    {% assign allCommonTags = allCommonTags | append: tag %}
+    • first: {{ allCommonTags }} <br>
+    {% else %}
+      <!-- This second boonlean isn't triggering correctly for some reason -->
+      {% if forloop.index <= forloop.length %}
+        {% assign allCommonTags = allCommonTags | append: ", and " | append: tag %}
+        • second: {{ allCommonTags }}<br>
+      {% else %}
+        {% assign allCommonTags = allCommonTags | append: ", " | append: tag %}
+        • third: {{ allCommonTags }}<br>
+    {% endif %}
+  {% endif %}
+{% endcomment %}

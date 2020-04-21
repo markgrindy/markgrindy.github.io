@@ -1,7 +1,7 @@
 // GENERAL STYLES
 
 :root{
-	--black: #222; // #030A01;
+	--black: #121212;
 	--white: #fff;
 	--blue: #2b64a9;
 	--yellow: #FAFF00;
@@ -10,7 +10,22 @@
 	--ahover: #5d81ad;
 	--grey: #666;
   --lightGrey: #888;
+  --lighterGrey: #ccc;
+	--lightestGrey: #f4f5f2;
+  --darkGrey: rgb(51, 51, 51);
 }
+
+/*
+ * Dark mode colors:
+ * --black: #242424;
+ * --white: #fff;
+ * --blue: #3ea6ff;
+ * --yellow: #615700;
+ * --red: #E56262;
+ * --a: var(--blue);
+ * --ahover: #3b689e;
+ * --grey: #aaa;
+ */
 
 html, body {
   color: var(--black);
@@ -21,10 +36,18 @@ html, body {
   word-wrap:break-word;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 body a {
   color:var(--a);
   text-decoration: underline;
-  // font-size: 1.125em;
+}
+
+#content {
+	flex-grow: 4;
 }
 
 body a:hover {color:var(--ahover);}
@@ -46,7 +69,6 @@ dl,
 dd {
   font-size: 1em;
   margin: 0 20px;
-  // max-width: 989px;
 }
 
 @media screen and (min-width: 620px) {
@@ -70,13 +92,15 @@ dd {
   }
 }
 
-// NAVIGATION MENU
+// NAVIGATION
 
 .current {
   color: green;
 }
 
-// SEARCH ELEMENTS
+.dropdown {}
+
+// SEARCH
 
 .gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
   border-color: var(--black) !important;
@@ -89,23 +113,93 @@ dd {
   color: #999 !important;
 }
 
-// HEADINGS
+.gcsc-find-more-on-google-text, .gcsc-find-more-on-google-magnifier, .gcsc-find-more-on-google-query {
+  display: none !important;
+}
+
+.gsc-webResult.gsc-result:hover {
+  border-width: 0 !important;
+}
+
+// SUMMARY LAYOUT
+
+.category-head {
+  font-size:.8em;
+	text-transform:uppercase;
+}
+
+.summary-wrapper + .category-head {
+	border-top: .1em solid var(--black);
+	padding-top: .75em;
+}
+
+.summary-wrapper a, .summary-wrapper a:hover {
+  color:var(--grey);
+	text-decoration: none;
+}
+
+.summary-wrapper a h1 {
+	color: var(--black);
+	transition: 0.6s ease;
+}
+
+.summary-wrapper a:hover h1 {
+	color:var(--grey);
+}
+
+h1.summary-title {
+	font-size: 1.25em;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 0;
+}
+
+p.summary-description {
+	font-size: 0.9em;
+	line-height: 1.3em;
+	margin-bottom: .5em;
+}
+
+img.summary-photo {
+	max-width: calc(100vw - 40px);
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 620px) {
+	img.summary-photo {
+		max-width: 600px;
+	}
+}
+
+p.summary-caption {
+	text-align: right;
+}
+
+div.summary-wrapper + p.summary-separator, .relatedPosts .category-head {
+	border-bottom: .04125em var(--lighterGrey) solid;
+	margin-bottom: 1em;
+	padding-bottom: .9em;
+}
+
+// POST LAYOUT
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-// POSTS
-
 h1.post-title {
   font-size: 1.9em;
-  // font-style: italic;
+  line-height: 1em;
   margin-top: 1em;
   margin-bottom: .25em;
 }
 
-img + em {
+p.post-description {
+  line-height: 1.23em;
+}
+
+img + em, .caption {
   color: var(--grey);
   font-size: .8em;
   margin-top: .25em;
@@ -113,7 +207,7 @@ img + em {
   font-style: normal;
 }
 
-img + em a {
+img + em a, .caption {
   color: var(--lightGrey);
   font-size: .75em;
   text-decoration: none;
@@ -125,8 +219,15 @@ p img {
   max-width: 640px;
 }
 
+p img:not([alt]) {
+  margin: auto;
+  width: auto;
+  display: inline-block;
+  max-width: 100%;
+}
+
 @media screen and (min-width: 620px) {
-  img, p img, .post-image {
+  img, p img {
     max-width: 600px;
     margin: 0 auto;
   }
@@ -136,12 +237,31 @@ p + p {
 margin-top: 1em;
 }
 
-// SEARCH
+// RELATED POSTS
 
-.gcsc-find-more-on-google-text, .gcsc-find-more-on-google-magnifier, .gcsc-find-more-on-google-query {
-  display: none !important;
+.label-default {
+	background-color: red;
+	border: 1px var(--grey) solid;
+	color: var(--lightGrey);
+	text-decoration: none;
 }
 
-.gsc-webResult.gsc-result:hover {
-  border-width: 0 !important;
+// FOOTER
+footer {
+  background-color: var(--lightestGrey);
+  border-top: .04125em var(--lightGrey) solid;
+  color:var(--darkGrey);
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.back-matter {
+  color: var(--grey);
+  // border-top: .04125em var(--lightGrey) solid;
+  font-size: .8em;
+  font-style: normal;
+  margin-top: 1em;
+  line-height: 1em;
+  text-align: center;
+  padding-top: 1em;
 }

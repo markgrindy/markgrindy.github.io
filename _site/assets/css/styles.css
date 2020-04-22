@@ -60,11 +60,13 @@ h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockqu
 
 .category-head { font-size: .8em; text-transform: uppercase; }
 
-.summary-wrapper + .category-head { border-top: 0.1em solid var(--black); padding-top: .75em; }
+.summary-wrapper { max-width: 600px; margin: 0 20px; }
+
+.summary-wrapper + .category-head, .category-head.related { border-top: 0.1em solid var(--black); padding-top: .75em; }
 
 .summary-wrapper a, .summary-wrapper a:hover { color: var(--grey); text-decoration: none; }
 
-.summary-wrapper a h1 { color: var(--black); transition: 0.6s ease; }
+.summary-wrapper a h1, .summary-wrapper a div h1 { color: var(--black); transition: 0.6s ease; }
 
 .summary-wrapper a:hover h1 { color: var(--grey); }
 
@@ -78,7 +80,7 @@ img.summary-photo { max-width: calc(100vw - 40px); margin: 0 auto; }
 
 p.summary-caption { text-align: right; }
 
-div.summary-wrapper + p.summary-separator, .relatedPosts .category-head { border-bottom: 0.04125em var(--lighterGrey) solid; margin-bottom: 1em; padding-bottom: .9em; }
+div.summary-wrapper + p.summary-separator { border-bottom: 0.04125em var(--lighterGrey) solid; margin-bottom: 1em; padding-bottom: .9em; }
 
 h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 1em; }
 
@@ -98,7 +100,21 @@ p img:not([alt]) { margin: auto; width: auto; display: inline-block; max-width: 
 
 p + p { margin-top: 1em; }
 
-.label-default { background-color: red; border: 1px var(--grey) solid; color: var(--lightGrey); text-decoration: none; }
+.wrapper { display: flex; flex-flow: row wrap; font-weight: bold; align-items: center; justify-content: center; text-decoration: none; color: var(--black); transition: 0.6s ease; }
+
+.wrapper:hover { color: var(--grey); }
+
+.aside { flex: 1 0 0; order: 3; }
+
+.main { flex: 3 0px; order: 2; }
+
+@media screen and (min-width: 620px) { .summary-wrapper { margin: 0 auto; } .main { min-width: 480px; } }
+
+h1.summary-title.mini { font-size: 1em; font-weight: normal; margin: 0; }
+
+.summary-photo.mini { width: 120px; margin: 0; }
+
+.related-date { color: var(--grey); font-size: .75em; font-weight: normal; text-decoration: none; margin: .5em 0 0 0; }
 
 footer { background-color: var(--lightestGrey); border-top: 0.04125em var(--lightGrey) solid; color: var(--darkGrey); margin-top: 1em; padding-bottom: 1em; }
 

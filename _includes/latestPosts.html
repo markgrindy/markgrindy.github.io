@@ -17,9 +17,9 @@
     <h1 class="category-head">{{ category | first }}</h1>
     {% for post in category.last %}
       {% if forloop.first %}
-        {% include summaryFeature.html %}
+        {% include summaryFeaturePhotoFirst.html %}
       {% else %}
-        {% include summarySub.html %}
+        {% include summaryMiniPhoto.html %}
       {% endif %}
     {% endfor %}
   {% endunless %}

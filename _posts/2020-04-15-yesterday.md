@@ -1,6 +1,9 @@
 ---
 author: mark
 category: finance
+image: https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+caption: A description of the image.
+image-credit: asogetti/Unsplash
 tags: [liteIndex, fire]
 ---
 An apple is a sweet, edible fruit produced by an apple tree.

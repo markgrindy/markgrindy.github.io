@@ -1,9 +1,8 @@
 ---
 author: mark
-title: Test The title of the post, page, or document can be a pretty long sentence, actually
+title: The title of the post, page, or document can be a pretty long sentence, actually
 description: A short description of the page's content. Convallis tellus id interdum velit laoreet. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Elit at imperdiet dui accumsan.
-image:
-imageLinkDeteleThisKeyLater: https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+image: https://images.unsplash.com/photo-1530143311094-34d807799e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
 caption: A description of the image.
 image-credit: asogetti/Unsplash
 image-credit-link: https://unsplash.com/photos/GYr9A2CPMhY

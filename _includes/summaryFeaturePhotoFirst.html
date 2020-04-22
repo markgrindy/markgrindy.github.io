@@ -1,0 +1,15 @@
+<p class="summary-separator"/>
+<div class="summary-wrapper">
+  <a class="summary-a" href="{{ post.url }}">
+    <img class="summary-photo" src="{{ post.image }}" alt="{{ page.caption }}"/>
+    <p class="caption summary-caption">
+      {% if post.image-credit-link %}
+        {{ post.image-credit }}
+      {% endif %}
+    </p>
+    <h1 class="summary-title" style="font-weight: normal">
+      {{ post.title }}
+    </h1>
+    <p class="related-date">{{ post.date | date: "%B %e, %Y" }}</p>
+  </a>
+</div>

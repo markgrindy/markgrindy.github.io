@@ -56,10 +56,16 @@ body a {
   text-decoration: underline;
 }
 
-#content, footer {
+#content {
 	flex-grow: 4;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+footer {
+	flex-grow: 0;
+	padding: 0 20px;
+	width: 100%;
 }
 
 body a:hover {color:var(--ahover);}
@@ -390,6 +396,7 @@ p.post-description {
 
 img + em, .caption {
   color: var(--grey);
+	display: inline-block;
   font-size: .8em;
   margin-top: .25em;
   line-height: 1em;
@@ -499,13 +506,18 @@ h1.summary-title.mini {
 }
 
 // FOOTER
+
 footer {
   background-color: var(--lightestGrey);
   border-top: .04125em var(--lightGrey) solid;
   color:var(--darkGrey);
   margin-top: 1em;
   padding-bottom: 1em;
-	width: 100%;
+}
+
+.footer-head {
+	font-size: .9em;
+	font-style: italic;
 }
 
 .back-matter {
@@ -516,4 +528,15 @@ footer {
   line-height: 1em;
   text-align: center;
   padding-top: 1em;
+}
+
+.back-matter p a {
+	color: var(--grey);
+	display: inline-block;
+	padding: 0 1em;
+	text-decoration: none;
+}
+
+.back-matter p a:hover {
+	text-decoration: underline;
 }

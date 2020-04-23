@@ -1,5 +1,17 @@
-<h1>H1 footer</h1>
-<p>Footer content goes here.</p>
+<h1 class="footer-head">The Latest</h1>
+{% for post in site.posts limit: 3 %}
+  <p class="summary-separator"/>
+  <div class="summary-wrapper">
+    <a class="wrapper" href="{{ post.url }}">
+      <article class="main">
+        <h1 class="summary-title mini mini-footer">
+        {{ post.title }}
+        <span class="related-date">{{ post.date | date: "%B %e, %Y" }}</span>
+        </h1>
+      </article>
+    </a>
+  </div>
+{% endfor %}
 <div class="back-matter">
   <p>&copy;
     <script type="text/JavaScript">
@@ -7,4 +19,9 @@
     </script>
     {{ site.title }}
   </p>
-</div>
+  <p>
+    {% for item in site.data.footerLinks %}
+      <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+  </p>
+  </div>

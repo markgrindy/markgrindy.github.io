@@ -41,7 +41,9 @@ body { display: flex; flex-direction: column; }
 
 body a { color: var(--a); text-decoration: underline; }
 
-#content, footer { flex-grow: 4; margin: 0 auto; padding: 0 20px; }
+#content { flex-grow: 4; margin: 0 auto; padding: 0 20px; }
+
+footer { flex-grow: 0; padding: 0 20px; width: 100%; }
 
 body a:hover { color: var(--ahover); }
 
@@ -149,7 +151,7 @@ h1.post-title { font-size: 1.9em; line-height: 1em; margin-top: 1em; margin-bott
 
 p.post-description { line-height: 1.23em; }
 
-img + em, .caption { color: var(--grey); font-size: .8em; margin-top: .25em; line-height: 1em; font-style: normal; }
+img + em, .caption { color: var(--grey); display: inline-block; font-size: .8em; margin-top: .25em; line-height: 1em; font-style: normal; }
 
 img + em a, .caption { color: var(--lightGrey); font-size: .75em; text-decoration: none; }
 
@@ -177,8 +179,14 @@ h1.summary-title.mini { font-size: 1em; font-weight: normal; margin: 0; }
 
 .related-date { color: var(--grey); font-size: .75em; font-weight: normal; text-decoration: none; margin: .5em 0 0 0; }
 
-footer { background-color: var(--lightestGrey); border-top: 0.04125em var(--lightGrey) solid; color: var(--darkGrey); margin-top: 1em; padding-bottom: 1em; width: 100%; }
+footer { background-color: var(--lightestGrey); border-top: 0.04125em var(--lightGrey) solid; color: var(--darkGrey); margin-top: 1em; padding-bottom: 1em; }
+
+.footer-head { font-size: .9em; font-style: italic; }
 
 .back-matter { color: var(--grey); font-size: .8em; font-style: normal; margin-top: 1em; line-height: 1em; text-align: center; padding-top: 1em; }
+
+.back-matter p a { color: var(--grey); display: inline-block; padding: 0 1em; text-decoration: none; }
+
+.back-matter p a:hover { text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */

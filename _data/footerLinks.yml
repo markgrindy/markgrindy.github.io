@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: About
+  link: /about
+- name: Contact
+  link: /contact
+- name: Posts by Topic
+  link: /topics

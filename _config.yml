@@ -26,7 +26,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-title: "Swatchword"
+title: "swatchword.com"
 tagline: "/swäCHˌwərd/ noun: a sample expression of a core belief."
 description: "Project reports, training logs, and other entries."
 url: "https://swatchword.com" # the base hostname & protocol for your site

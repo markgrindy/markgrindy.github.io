@@ -1,7 +1,10 @@
 ---
 title: Search results
 ---
-<h1>including search box with query (the original will be hidden)</h1>
-{% include searchBox.html %}
+<div class="searchBar">
+    {% include searchBox.html %}
+</div>
 <h1>{{ page.title }}</h1>
-{% include searchResults.html %}
+<div class="summary-wrapper">
+  {% include searchResults.html %}
+</div>

@@ -113,6 +113,8 @@ img.header-logo { margin-top: 4px; max-height: calc(var(--header-height) - 16px)
 
 .gsst_a .gscb_a { color: #999 !important; }
 
+.gsc-adBlock { display: none !important; }
+
 .gcsc-find-more-on-google-text, .gcsc-find-more-on-google-magnifier, .gcsc-find-more-on-google-query { display: none !important; }
 
 .gsc-webResult.gsc-result:hover { border-width: 0 !important; }

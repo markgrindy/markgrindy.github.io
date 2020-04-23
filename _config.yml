@@ -29,7 +29,7 @@ plugins:
 title: "Swatchword"
 tagline: "/swäCHˌwərd/ noun: a sample expression of a core belief."
 description: "Project reports, training logs, and other entries."
-url: "https://markgrindy.github.io" # the base hostname & protocol for your site
+url: "https://swatchword.com" # the base hostname & protocol for your site
 
 # Settings for Related Posts
 related:

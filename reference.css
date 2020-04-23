@@ -60,7 +60,7 @@ h1 {
   text-align: center;background-color: var(--black); color: var(--white);margin:0;}
 h2 {text-align: center;background-color: var(--grey);margin:0;}
 h3 {text-decoration: underline;}
-h4, h3.title {text-transform: uppercase; font-weight: normal;font-style: italic; text-decoration: none;}
+h4 {text-transform: uppercase; font-weight: normal;font-style: italic; text-decoration: none;}
 h5 {background-color: var(--yellow);font-weight: normal;}
 h6 {/*text-transform: uppercase;*/}
 

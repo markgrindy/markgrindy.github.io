@@ -1,4 +1,26 @@
-{% for item in site.data.navigation %}
-  <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
-{% endfor %}
-{% include searchBox.html %}
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div class="header-spacer"></div>
+    <div class="header"><img class="header-logo" src="/assets/img/swatchword-logo.svg"/></div>
+    <div class="searchBar">
+      {% include searchBox.html %}
+    </div>
+    <div class="menu-outer">
+      {% include menu.html %}
+    </div>
+  </div>
+</div>
+
+<div class="header-spacer"></div>
+<!-- <div class="header">
+  <span class="menu-button" onclick="openNav()">&#9776;</span>
+  <img class="header-logo" src="/assets/img/swatchword-logo.svg"/>
+</div> -->
+
+<div class="header">
+  <span class="menu-button" onclick="openNav()">&#9776;</span>
+  <a href="/">
+    <img class="header-logo" src="/assets/img/swatchword-logo.svg"/>
+  </a>
+</div>

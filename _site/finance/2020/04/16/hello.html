@@ -9,13 +9,14 @@
     <!-- currently turned off (during development) -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42536460-1"></script>
+
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42536460-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-42536460-1');
+  gtag('config', 'UA-42536460-2');
 </script> -->
 
     <script async src="https://cse.google.com/cse.js?cx=000739406862659948819:75tk2uzpkon"></script>
@@ -39,32 +40,81 @@
 <meta name="twitter:site" content="@markgrindy" />
 <meta name="twitter:creator" content="@mark" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-16T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/finance/2020/04/16/hello.html"},"url":"http://localhost:4000/finance/2020/04/16/hello.html","author":{"@type":"Person","name":"mark"},"description":"A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.","headline":"Hello","dateModified":"2020-04-16T00:00:00-05:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","author":{"@type":"Person","name":"mark"},"url":"http://localhost:4000/finance/2020/04/16/hello.html","headline":"Hello","dateModified":"2020-04-16T00:00:00-05:00","datePublished":"2020-04-16T00:00:00-05:00","description":"A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/finance/2020/04/16/hello.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
   <body>
     <nav>
-        
-  <li><a href="/" >Home</a></li>
-
-  <li><a href="/about.html" >About</a></li>
-
-  <li><a href="/blog.html" >Blog</a></li>
-
-  <li><a href="/staff.html" >Staff</a></li>
-
-  <li><a href="/topics/" >Topics</a></li>
-
-<div
+        <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div class="header-spacer"></div>
+    <div class="header"><img class="header-logo" src="/assets/img/swatchword-logo.svg"/></div>
+    <div class="searchBar">
+      <div
   class="gcse-searchbox-only"
-  data-mobileLayout="disabled"
+  data-mobileLayout="forced"
   data-resultsURL="/search.html"
   data-enableAutoComplete="true"
   name="markgrindy"
 >
 </div>
 
+    </div>
+    <div class="menu-outer">
+      
+<!-- <h1 class="menu-header">Test</h1>
+  <div class="menu-section">
+    <a href="#">Test</a>
+  </div> -->
+
+
+<div class="menu-section">
+  <h1 class="menu-header category-head">Topics</h1>
+      <a href="/training">Training</a>
+      <a href="/finance">Finance</a>
+      <p> &nbsp; </p>
+</div>
+
+<div class="menu-section">
+  <h1 class="menu-header category-head">Meta</h1>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <p> &nbsp; </p>
+</div>
+
+
+
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("myNav").style.display = "block";
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+    document.getElementsByTagName("body")[0].style.overflow = "scroll";
+  }
+</script>
+
+    </div>
+  </div>
+</div>
+
+<div class="header-spacer"></div>
+<!-- <div class="header">
+  <span class="menu-button" onclick="openNav()">&#9776;</span>
+  <img class="header-logo" src="/assets/img/swatchword-logo.svg"/>
+</div> -->
+
+<div class="header">
+  <span class="menu-button" onclick="openNav()">&#9776;</span>
+  <a href="/">
+    <img class="header-logo" src="/assets/img/swatchword-logo.svg"/>
+  </a>
+</div>
 
     </nav>
     <div id="content">

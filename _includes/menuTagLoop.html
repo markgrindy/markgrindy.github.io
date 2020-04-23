@@ -1,0 +1,39 @@
+{% assign categoryArray = "" split: "/" %}
+
+{% for category in site.categories %}
+  {% assign filterCategory = category | first | strip_html %}
+
+
+  {% comment %}Posts will be filtered by one category{% endcomment %}
+  {% assign filterCategory = category | first | strip_html %}
+  {% assign tagsArray = "" | split: "/" %}
+
+  {% for tag in site.tags %}
+      {% comment %}creates an empty array{% endcomment %}
+      {% assign tagsInCategory = "" | split: "/" %}
+      {% assign tagCounter = 1 %}
+
+      {% comment %}looping over site.tags {% endcomment %}
+      {% for post in tag[1] %}
+          {% if post.categories contains filterCategory %}
+              {% comment %}if a post is from our filter category we add its tags to tagsInCategory array{% endcomment %}
+              {% for tag in post.tags %}
+                {% assign tagsInCategory = tagsInCategory | push: post.tag[tagCounter] %}
+              {% endfor %}
+          {% endif %}
+      {% endfor %}
+
+      {% if tagsInCategory.size > 0 %}
+          {% assign tagsArray = tagsArray | push: tag[0] %}
+      {% endif %}
+  {% endfor %}
+
+  <h1 class="menu-header">{{ filterCategory | capitalize }}</h1>
+  <div class="menu-section">
+
+  {% for tag in tagsArray %}
+    <a href="#">{{ tagsArray[forloop.index0] }}</a>
+  {% endfor %}
+
+  </div>
+{% endfor %}

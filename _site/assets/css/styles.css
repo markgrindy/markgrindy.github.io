@@ -177,7 +177,7 @@ h1.summary-title.mini { font-size: 1em; font-weight: normal; margin: 0; }
 
 .related-date { color: var(--grey); font-size: .75em; font-weight: normal; text-decoration: none; margin: .5em 0 0 0; }
 
-footer { background-color: var(--lightestGrey); border-top: 0.04125em var(--lightGrey) solid; color: var(--darkGrey); margin-top: 1em; padding-bottom: 1em; }
+footer { background-color: var(--lightestGrey); border-top: 0.04125em var(--lightGrey) solid; color: var(--darkGrey); margin-top: 1em; padding-bottom: 1em; width: 100%; }
 
 .back-matter { color: var(--grey); font-size: .8em; font-style: normal; margin-top: 1em; line-height: 1em; text-align: center; padding-top: 1em; }
 

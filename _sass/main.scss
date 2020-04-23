@@ -58,8 +58,8 @@ body a {
 
 #content {
 	flex-grow: 4;
-	// margin: 0 auto;
-	// padding: 0 20px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 body a:hover {color:var(--ahover);}
@@ -80,7 +80,7 @@ blockquote,
 dl,
 dd {
   font-size: 1em;
-  margin: 0 20px;
+  // margin: 0 20px;
 }
 
 @media screen and (min-width: 620px) {
@@ -314,7 +314,7 @@ img.header-logo {
 
 .summary-wrapper {
 	max-width: 600px;
-	margin: 0 20px;
+	// margin: 0 20px;
 }
 
 .summary-wrapper + .category-head, .category-head.related {

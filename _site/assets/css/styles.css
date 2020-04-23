@@ -41,11 +41,11 @@ body { display: flex; flex-direction: column; }
 
 body a { color: var(--a); text-decoration: underline; }
 
-#content { flex-grow: 4; }
+#content { flex-grow: 4; margin: 0 auto; padding: 0 20px; }
 
 body a:hover { color: var(--ahover); }
 
-h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { font-size: 1em; margin: 0 20px; }
+h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { font-size: 1em; }
 
 @media screen and (min-width: 620px) { h1, h2, h3, h4, h5, h6, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { max-width: 600px; margin: 0 auto; } }
 
@@ -121,7 +121,7 @@ img.header-logo { margin-top: 4px; max-height: calc(var(--header-height) - 16px)
 
 .category-head { font-size: .8em; text-transform: uppercase; }
 
-.summary-wrapper { max-width: 600px; margin: 0 20px; }
+.summary-wrapper { max-width: 600px; }
 
 .summary-wrapper + .category-head, .category-head.related { border-top: 0.1em solid var(--black); padding-top: .75em; }
 

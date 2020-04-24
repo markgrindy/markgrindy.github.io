@@ -3,28 +3,28 @@ SOURCE:
 https://blog.webjeda.com/jekyll-related-posts/
 {% endcomment %}
 
-<!-- Set initial variables -->
-{% assign maxRelated = site.related.maxRelated %} <!-- sets max num of related articles to display -->
-{% assign minCommonTags = site.related.minCommonTags %} <!-- default = 2 -->
+{% comment %} Set initial variables {% endcomment %}
+{% assign maxRelated = site.related.maxRelated %} {% comment %} sets max num of related articles to display {% endcomment %}
+{% assign minCommonTags = site.related.minCommonTags %} {% comment %} default = 2 {% endcomment %}
 {% assign maxRelatedCounter = 0 %}
-{% assign allCommonTags = '' %} <!-- custom  -->
-{% assign summarySummary = '' %} <!-- custom  -->
+{% assign allCommonTags = '' %} {% comment %} custom  {% endcomment %}
+{% assign summarySummary = '' %} {% comment %} custom  {% endcomment %}
 
-<!-- Begin MAIN for loop  -->
+{% comment %} Begin MAIN for loop  {% endcomment %}
 {% for post in site.posts %}
 
 
-  <!-- Set variables for MAIN forloop  -->
+  {% comment %} Set variables for MAIN forloop  {% endcomment %}
   {% assign sameTagCount = 0 %}
   {% assign commonTags = '' %}
 
-  <!-- Begin TAG forloop -->
+  {% comment %} Begin TAG forloop {% endcomment %}
   {% for tag in post.tags %}
 
-    {% if post.url != page.url %} <!-- Exclude current page -->
-      {% if page.tags contains tag %} <!-- Skip pages without tags -->
+    {% if post.url != page.url %} {% comment %} Exclude current page {% endcomment %}
+      {% if page.tags contains tag %} {% comment %} Skip pages without tags {% endcomment %}
 
-        <!-- Set variables for TAG forloop -->
+        {% comment %} Set variables for TAG forloop {% endcomment %}
         {% assign sameTagCount = sameTagCount | plus: 1 %}
         {% capture tagmarkup %} <span class="related-label">{{ tag }}</span> {% endcapture %}
         {% assign commonTags = commonTags | append: tagmarkup %}
@@ -62,7 +62,7 @@ https://blog.webjeda.com/jekyll-related-posts/
 {% assign allCommonTags = allCommonTags | split: ", " %}
 {% if allCommonTags.size > 0 %}
   {% assign allCommonTags = allCommonTags | join: ", " %}
-  {% include relatedTagLoop.html %} <!-- custom -->
+  {% include relatedTagLoop.html %} {% comment %} custom {% endcomment %}
   <h1 class="category-head related">More on {{ tagString }}</h1>
   {{ summarySummary }}
 {% else %}

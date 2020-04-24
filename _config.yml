@@ -26,10 +26,13 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Settings for SEO
 title: "swatchword.com"
 tagline: "/swäCHˌwərd/ noun: a sample expression of a core belief."
 description: "Project reports, training logs, and other entries."
 url: "https://swatchword.com" # the base hostname & protocol for your site
+favicon: /favicon.png
+logo: /assets/img/markgrindy-logo.svg
 
 # Settings for Related Posts
 related:
@@ -56,3 +59,6 @@ twitter:
 #     - https://keybase.io/benbalter
 # google_site_verification: 123456789 # for verifying ownership via Google webmaster tools
 lang: en_US
+
+sheets:
+  postsData: "2PACX-1vSCR28RzPNncW_hexILbVFrIMJPJeShUw3YZdJYTBcuAqDKC2Nrt6bZ9zYEFJzL7G05g18LKm67aOi3"

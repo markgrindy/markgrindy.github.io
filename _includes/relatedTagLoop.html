@@ -5,7 +5,7 @@
 {% assign allCommonTags = allCommonTags | uniq %}
 {% assign tagString = "" %}
 
-<!-- <p>allCommonTags (pre-loop): {{ allCommonTags | join: ", " }}</p> -->
+{% comment %} <p>allCommonTags (pre-loop): {{ allCommonTags | join: ", " }}</p> {% endcomment %}
 
 {% for tag in allCommonTags %}
 

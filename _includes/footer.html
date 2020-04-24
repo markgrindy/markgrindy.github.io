@@ -1,13 +1,15 @@
-<h1 class="footer-head">The Latest</h1>
-{% for post in site.posts limit: 3 %}
+<h1 class="footer-head">Latest Training Logs</h1>
+{% for post in site.logs limit: 3 %}
   <p class="summary-separator"/>
   <div class="summary-wrapper">
     <a class="wrapper" href="{{ post.url }}">
       <article class="main">
-        <h1 class="summary-title mini mini-footer">
-        {{ post.title }}
-        <span class="related-date">{{ post.date | date: "%B %e, %Y" }}</span>
-        </h1>
+        <p class="mini mini-footer">
+          {{ post.description }}
+          <span class="related-date">
+            {% include timeAgo.html %}
+          </span>
+        </p>
       </article>
     </a>
   </div>

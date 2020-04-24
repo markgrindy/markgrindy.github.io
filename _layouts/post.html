@@ -15,11 +15,14 @@ layout: default
 
 </p>
 <p>
+  {% comment %}
   {% assign author = site.authors | where: 'short_name', page.author | first %}
   {% if author %}
     By <a href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
-  • {{ page.date | date: "%B %e, %Y" }}
+  • 
+  {% endcomment %}
+  {{ page.date | date: "%B %e, %Y" }}
 </p>
 
 {{ content }}

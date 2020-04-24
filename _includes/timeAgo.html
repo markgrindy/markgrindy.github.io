@@ -1,0 +1,26 @@
+{% assign today = site.time | date: "%s" %}
+{% assign postDate = post.date | date: "%s" %}
+{% assign secondsAgo = today | minus: postDate %}
+{% assign daysAgo = secondsAgo | divided_by: 86400 %}
+{% assign weeksAgo = daysAgo | divided_by: 7 %}
+{% assign yearsAgo = 0 %}
+{% if yearsAgo > 0 %}
+  {% if yearsAgo == 1 %}
+    {{ yearsAgo }} year ago
+  {% else %}
+    {{ yearsAgo }} years ago
+  {% endif %}
+{% endif %}
+{% if yearsAgo == 0 and weeksAgo > 0 %}
+  {% if weeksAgo == 1 %}
+    {{ weeksAgo }} week ago
+  {% else %}
+    {{ weeksAgo }} weeks ago
+  {% endif %}
+{% else %}
+  {% if daysAgo == 1 %}
+    {{ daysAgo }} day ago
+  {% else %}
+    {{ daysAgo }} days ago
+  {% endif %}
+{% endif %}

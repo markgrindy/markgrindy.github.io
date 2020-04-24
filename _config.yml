@@ -1,5 +1,5 @@
 collections:
-  authors:
+  logs:
     output: true
 
 # permalink: /:categories/:title/
@@ -7,10 +7,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "logs"
     values:
-      layout: "author"
-      author: mark
+      layout: "log"
   - scope:
       path: ""
       type: "posts"

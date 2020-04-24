@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- currently turned off (during development) -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42536460-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-42536460-2');
+</script> -->
+
+    <script async src="https://cse.google.com/cse.js?cx=000739406862659948819:75tk2uzpkon"></script>
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="swatchword.com" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Update Spreadsheet | swatchword.com</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Update Spreadsheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Project reports, training logs, and other entries." />
+<meta property="og:description" content="Project reports, training logs, and other entries." />
+<link rel="canonical" href="http://localhost:4000/pull-sheet/" />
+<meta property="og:url" content="http://localhost:4000/pull-sheet/" />
+<meta property="og:site_name" content="swatchword.com" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Update Spreadsheet" />
+<meta name="twitter:site" content="@markgrindy" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/pull-sheet/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/markgrindy-logo.svg"}},"headline":"Update Spreadsheet","description":"Project reports, training logs, and other entries.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <nav>
+      <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div class="header-spacer"></div>
+    <div class="header"><img class="header-logo" src="/assets/img/markgrindy-logo.svg" alt="swatchword.com logo"/></div>
+    <div class="searchBar">
+      <div
+  class="gcse-searchbox-only"
+  data-mobileLayout="forced"
+  data-resultsURL="/search.html"
+  data-enableAutoComplete="true"
+>
+</div>
+
+    </div>
+    <div class="menu-outer">
+      
+<!-- <h1 class="menu-header">Test</h1>
+  <div class="menu-section">
+    <a href="#">Test</a>
+  </div> -->
+
+
+<div class="menu-section">
+  <h1 class="menu-header category-head">Topics</h1>
+      <a href="/training">Training</a>
+      <a href="/finance">Finance</a>
+      <p> &nbsp; </p>
+</div>
+
+<div class="menu-section">
+  <h1 class="menu-header category-head">Meta</h1>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <p> &nbsp; </p>
+</div>
+
+
+
+
+<script type="text/javascript">
+  function openNav() {
+    document.getElementById("myNav").style.display = "block";
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+    document.getElementsByTagName("body")[0].style.overflow = "scroll";
+  }
+</script>
+
+    </div>
+  </div>
+</div>
+
+<div class="header-spacer"></div>
+<!-- <div class="header">
+  <span class="menu-button" onclick="openNav()">&#9776;</span>
+  <img class="header-logo" src="/assets/img/swatchword-logo.svg"/>
+</div> -->
+
+<div class="header">
+  <span class="menu-button" onclick="openNav()">&#9776;</span>
+  <a href="/">
+    <img class="header-logo" src="/assets/img/markgrindy-logo.svg" alt="swatchword.com logo"/>
+  </a>
+</div>
+
+    </nav>
+    <div id="content">
+      <!--These are JavaScript Libraries-->
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/utility.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/cookies.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/tabletop.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/js-yaml.min.js"></script>
+<script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/github.js"></script>
+
+<h1>Update</h1>
+<script type="text/javascript">
+
+    // Reset the cookie manually
+    //Cookies.expire('token');
+
+    // URL: https://[user/org].github.io/[repo]/pull-sheet/?key=your_key&worksheet=worksheet_name&token=your_personal_access_token&org=your_org&repo=your_repo&branch=your_branch
+
+    // Incoming Variables append
+    var $key = getUrlVar('key');
+    var $resource = getUrlVar('worksheet');
+    var $oAuthToken = getUrlVar('token');
+    var $org = getUrlVar('org');
+    var $repo = getUrlVar('repo');
+    var $branch = getUrlVar('branch');
+
+    var $yaml_store = "";
+
+    if($oAuthToken !='')
+      {
+      // Setting a cookie value
+      Cookies.set('token', $oAuthToken);
+      // Set with expiration
+      // Cookies.set('token', $oAuthToken, { expires: '01/01/2017' });
+      }
+
+    // Grab the token from cookie
+    $oAuthToken = Cookies.get('token');
+
+    $(document).ready( function() {
+      Tabletop.init( { key: $key,
+                       callback: showInfo,
+                       wanted: [ $resource ],
+                       debug: true } )
+    })
+
+    console.log($resource);
+
+    function showInfo(data, tabletop) {
+
+      $products = new Array();
+
+      $("#table_info").text("We found the tables " + tabletop.model_names.join(", "));
+
+      $.each( tabletop.sheets(), function(i, sheet) {
+        $("#table_info").append("<p>" + sheet.name + " has " + sheet.column_names.join(", ") + "</p>");
+      });
+
+      $product = tabletop.sheets($resource).all();
+
+      $count = 0;
+      $total_count = $product.length;
+      $.each( tabletop.sheets($resource).all(), function(i, service) {
+
+          $p = {};
+          $.each(service, function($key, $value) {
+            //console.log($key + ' == ' + $value);
+            $p[$key] = $value;
+          });
+          $products.push($p);
+
+          $count++;
+          //console.log($count + ' == ' + $total_count);
+          if($count==$total_count)
+            {
+            $yaml_dump = jsyaml.dump($products);
+
+            document.getElementById('source').value = $yaml_dump;
+
+            // Grab the token from cookie
+            $oAuthToken = Cookies.get('token');
+
+            var github = new Github({token: $oAuthToken,auth: "oauth"});
+            var repo = github.getRepo($org,$repo);
+
+            $writepath = '_data/' + $resource + '.yaml';
+
+            repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
+            console.log("writing 1:" + $writepath);
+            repo.getTree($branch + '?recursive=true', function(err, tree) {
+
+              $.each(tree, function(treeKey, treeValue) {
+
+                $path = treeValue['path'];
+                $sha = treeValue['sha'];
+
+                //console.log($path + ' == ' + $writepath);
+
+                if($path==$writepath)
+                  {
+                  repo.writemanual($branch,$writepath, $yaml_dump, 'Save', $sha, function(err) { });
+                  console.log("writing 2:" + $writepath);
+                  //alert("saved " + $writepath);
+                  }
+                });
+              });
+
+            }
+      });
+
+    }
+
+</script>
+<textarea cols="10" rows="5" id="source" style="border: 1px solid #000; width: 100%; height: 350px;"></textarea>
+
+    </div>
+    <footer>
+      <h1 class="footer-head">Latest Training Logs</h1>
+
+  <p class="summary-separator"/>
+  <div class="summary-wrapper">
+    <a class="wrapper" href="/logs/01-Hereby%20Resolved.html">
+      <article class="main">
+        <p class="mini mini-footer">
+          test
+          <span class="related-date">
+            
+
+
+
+
+
+
+
+  
+    16 weeks ago
+  
+
+
+          </span>
+        </p>
+      </article>
+    </a>
+  </div>
+
+<div class="back-matter">
+  <p>&copy;
+    <script type="text/JavaScript">
+      document.write(new Date().getFullYear());
+    </script>
+    swatchword.com
+  </p>
+  <p>
+    
+      <a href="/">Home</a>
+    
+      <a href="/about">About</a>
+    
+      <a href="/contact">Contact</a>
+    
+      <a href="/topics">Posts by Topic</a>
+    
+  </p>
+  </div>
+
+    </footer>
+  </body>
+</html>

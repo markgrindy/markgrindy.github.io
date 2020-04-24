@@ -2,3 +2,5 @@
   Url: 'http://google.com/'
 - Name: New York Times
   Url: 'http://nytimes.com'
+- Name: Wall Street Journal
+  Url: 'https://wsj.com/'

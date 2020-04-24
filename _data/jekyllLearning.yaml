@@ -4,3 +4,5 @@
   Url: 'http://nytimes.com'
 - Name: Wall Street Journal
   Url: 'https://wsj.com/'
+- Name: Wikipedia
+  Url: 'https://wikipedia.org'

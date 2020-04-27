@@ -1,1 +1,4 @@
-"---\nlayout: default \n---\nTest content here. "
+---
+layout: default 
+---
+Test content here. 

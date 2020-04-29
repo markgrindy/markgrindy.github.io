@@ -15,6 +15,8 @@ PM: 1:06 460ft'
 sat: ! 'PM: 0:30 treadmill'
 sun: ! 'AM: 0:19 treadmill
 AM: 1:06 treadmill'
-total: ! 'Rest day'
+totals: Time on feet: 7:51
+Elevation gain: 2,138 ft
+layout: log
 ---
 Test content.

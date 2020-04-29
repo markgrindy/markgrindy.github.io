@@ -1,5 +1,10 @@
 .local/
 
+# Drafts #
+###################
+/_drafts/*
+_drafts/
+
 # Compiled source #
 ###################
 *.com

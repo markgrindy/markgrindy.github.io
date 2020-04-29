@@ -1,8 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2020-04-29T07:16:13-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">swatchword.com</title><subtitle>Project reports, training logs, and other entries.</subtitle><entry><title type="html">Highly Resolved</title><link href="http://localhost:4000/2020/04/20/week-01.html" rel="alternate" type="text/html" title="Highly Resolved" /><published>2020-04-20T00:00:00-05:00</published><updated>2020-04-20T00:00:00-05:00</updated><id>http://localhost:4000/2020/04/20/week-01</id><content type="html" xml:base="http://localhost:4000/2020/04/20/week-01.html">&lt;p&gt;testing.&lt;/p&gt;</content><author><name></name></author><category term="training logs" /><summary type="html">testing.</summary></entry><entry><title type="html">Fractured</title><link href="http://localhost:4000/training/2020/04/19/fractured.html" rel="alternate" type="text/html" title="Fractured" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>http://localhost:4000/training/2020/04/19/fractured</id><content type="html" xml:base="http://localhost:4000/training/2020/04/19/fractured.html">&lt;p&gt;I put myself at increased risk of stress fracturing my foot:
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2020-04-29T09:17:28-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">swatchword.com</title><subtitle>Project reports, training logs, and other entries.</subtitle><entry><title type="html">Fractured</title><link href="http://localhost:4000/training/2020/04/19/fractured.html" rel="alternate" type="text/html" title="Fractured" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>http://localhost:4000/training/2020/04/19/fractured</id><content type="html" xml:base="http://localhost:4000/training/2020/04/19/fractured.html">&lt;p&gt;I put myself at increased risk of stress fracturing my foot:
 • wore new and different kinds of shoes
 • ran on new surfaces, uneven terrain
 • increased training load&lt;/p&gt;
 
 &lt;p&gt;Seems these can take a few weeks to fully develop and become noticeable, so it’s likely the accumulation of these three things that did me in. I’ve done even higher volume than I’ve been doning, so that’s very unlikely to be the culprit. And my goal is to run on trail, so even if that is a cause, I wouldn’t have done anything differently. It’s the shoes I have control over, and that I probably should have controlled differently.&lt;/p&gt;
 
-&lt;p&gt;For now, must avoid reproducing the pain. Reevaluate in 2-3 weeks. Brian says bones take six weeks to heal, so I’m thinking no training runs until then. Light jogs may be appropriate before then. We’ll see.&lt;/p&gt;</content><author><name></name></author><category term="run" /><summary type="html">I put myself at increased risk of stress fracturing my foot: • wore new and different kinds of shoes • ran on new surfaces, uneven terrain • increased training load</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1583413230888-c7b03057be03?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1583413230888-c7b03057be03?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Highly Resolved</title><link href="http://localhost:4000/2020/01/07/week-01.html" rel="alternate" type="text/html" title="Highly Resolved" /><published>2020-01-07T00:00:00-06:00</published><updated>2020-01-07T00:00:00-06:00</updated><id>http://localhost:4000/2020/01/07/week-01</id><content type="html" xml:base="http://localhost:4000/2020/01/07/week-01.html">&lt;p&gt;Test content.&lt;/p&gt;</content><author><name></name></author><category term="training logs" /><summary type="html">Test content.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://dgtzuqphqg23d.cloudfront.net/HMrRSKZ1g3e1Ceb83N2_2RWyNqrZi4eFHWODdoGHMmY-2048x1536.jpg" /><media:content medium="image" url="https://dgtzuqphqg23d.cloudfront.net/HMrRSKZ1g3e1Ceb83N2_2RWyNqrZi4eFHWODdoGHMmY-2048x1536.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;For now, must avoid reproducing the pain. Reevaluate in 2-3 weeks. Brian says bones take six weeks to heal, so I’m thinking no training runs until then. Light jogs may be appropriate before then. We’ll see.&lt;/p&gt;</content><author><name></name></author><category term="run" /><summary type="html">I put myself at increased risk of stress fracturing my foot: • wore new and different kinds of shoes • ran on new surfaces, uneven terrain • increased training load</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1583413230888-c7b03057be03?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1583413230888-c7b03057be03?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Week 16</title><link href="http://localhost:4000/2020/04/19/week-16.html" rel="alternate" type="text/html" title="Week 16" /><published>2020-04-19T00:00:00-05:00</published><updated>2020-04-19T00:00:00-05:00</updated><id>http://localhost:4000/2020/04/19/week-16</id><content type="html" xml:base="http://localhost:4000/2020/04/19/week-16.html">&lt;h2 id=&quot;training-logs&quot;&gt;[training logs]&lt;/h2&gt;
+&lt;p&gt;title: |
+  Week 16: Fractured
+image: /assets/post-img/2020-04-13-broken.png
+caption: “Saruman, your staff is broken.”
+image-credit: 
+image-credit-link: 
+tags: [training logs]
+mon: | 
+	? Rest day
+tue: | 
+	? PM: 1:00 531ft
+wed: | 
+	? PM: 1:57 467ft
+thu: | 
+	? AM: 0:40 181ft
+	&lt;br /&gt;? PM: 0:30 221ft
+fri: | 
+	? AM: 1:44 1,204ft
+sat: | 
+	? Rest day
+sun: | 
+	? VirtualRide: 2:35
+totals: |
+  • Time on feet: 5:53
+  &lt;br /&gt;• Elevation gain: 2,604 ft
+layout: log
+mon-note: 
+tue-note: 
+wed-note: 
+thu-note: 
+fri-note: 
+sat-note: 
+sun-note: 
+description: A stress fracture in my fifth metatalsal means I won’t be running for many weeks.
+—&lt;/p&gt;</content><author><name></name></author><summary type="html">[training logs] title: | Week 16: Fractured image: /assets/post-img/2020-04-13-broken.png caption: “Saruman, your staff is broken.” image-credit: image-credit-link: tags: [training logs] mon: | ? Rest day tue: | ? PM: 1:00 531ft wed: | ? PM: 1:57 467ft thu: | ? AM: 0:40 181ft ? PM: 0:30 221ft fri: | ? AM: 1:44 1,204ft sat: | ? Rest day sun: | ? VirtualRide: 2:35 totals: | • Time on feet: 5:53 • Elevation gain: 2,604 ft layout: log mon-note: tue-note: wed-note: thu-note: fri-note: sat-note: sun-note: description: A stress fracture in my fifth metatalsal means I won’t be running for many weeks. —</summary></entry><entry><title type="html">Week 09</title><link href="http://localhost:4000/2020/03/01/week-09.html" rel="alternate" type="text/html" title="Week 09" /><published>2020-03-01T00:00:00-06:00</published><updated>2020-03-01T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/01/week-09</id><content type="html" xml:base="http://localhost:4000/2020/03/01/week-09.html">&lt;h2 id=&quot;training-logs&quot;&gt;[training logs]&lt;/h2&gt;
+&lt;p&gt;title: |
+  Week 9: Day Brightoner
+image: https://dgtzuqphqg23d.cloudfront.net/SoukXAAOf49zVdxwc5ApfMqxrS3cx6A0jTQaEdoXh5g-2048x1536.jpg
+caption: Wasatch County overlook.
+image-credit: 
+image-credit-link: 
+tags: [training logs]
+mon: | 
+	? AM: 1:14 treadmill
+tue: | 
+	? PM: 0:45 treadmill
+wed: | 
+	? PM: 0:57 137ft
+thu: | 
+	? AM: 1:09 100ft
+fri: | 
+	? PM: 0:45 132ft
+sat: | 
+	? AM: 2:17 1,537ft
+sun: | 
+	? Rest day
+totals: |
+  • Time on feet: 7:09
+  &lt;br /&gt;• Elevation gain: 1,906 ft
+layout: log
+mon-note: 
+tue-note: 
+wed-note: 
+thu-note: 
+fri-note: 
+sat-note: 
+sun-note: 
+description: 
+—&lt;/p&gt;</content><author><name></name></author><summary type="html">[training logs] title: | Week 9: Day Brightoner image: https://dgtzuqphqg23d.cloudfront.net/SoukXAAOf49zVdxwc5ApfMqxrS3cx6A0jTQaEdoXh5g-2048x1536.jpg caption: Wasatch County overlook. image-credit: image-credit-link: tags: [training logs] mon: | ? AM: 1:14 treadmill tue: | ? PM: 0:45 treadmill wed: | ? PM: 0:57 137ft thu: | ? AM: 1:09 100ft fri: | ? PM: 0:45 132ft sat: | ? AM: 2:17 1,537ft sun: | ? Rest day totals: | • Time on feet: 7:09 • Elevation gain: 1,906 ft layout: log mon-note: tue-note: wed-note: thu-note: fri-note: sat-note: sun-note: description: —</summary></entry><entry><title type="html">Week 01</title><link href="http://localhost:4000/2020/01/05/week-01.html" rel="alternate" type="text/html" title="Week 01" /><published>2020-01-05T00:00:00-06:00</published><updated>2020-01-05T00:00:00-06:00</updated><id>http://localhost:4000/2020/01/05/week-01</id><content type="html" xml:base="http://localhost:4000/2020/01/05/week-01.html">&lt;h2 id=&quot;training-logs&quot;&gt;[training logs]&lt;/h2&gt;
+&lt;p&gt;title: |
+  Week 1: Highly Resolved
+image: 
+caption: 
+image-credit: 
+image-credit-link: 
+tags: [training logs]
+mon: | 
+  •  Workout: 0:10
+  &lt;br /&gt;• PM: 0:31 treadmill
+tue: | 
+  •  AM: 1:29 treadmill
+  &lt;br /&gt;• AM: 1:29 treadmill
+wed: | 
+  •  PM: 1:40 1,007ft
+thu: | 
+  •  AM: 0:46 treadmill
+fri: | 
+  •  PM: 0:33 309ft
+sat: | 
+  •  AM: 0:49 362ft
+sun: | 
+  •  AM: 0:58 treadmill
+  &lt;br /&gt;• PM: 1:06 460ft
+totals: |
+  • Time on feet: 9:24
+  &lt;br /&gt;• Elevation gain: 2,138 ft
+layout: log
+mon-note: 
+tue-note: 
+wed-note: 
+thu-note: 
+fri-note: 
+sat-note: 
+sun-note: 
+description: 
+—&lt;/p&gt;</content><author><name></name></author><summary type="html">[training logs] title: | Week 1: Highly Resolved image: caption: image-credit: image-credit-link: tags: [training logs] mon: | • Workout: 0:10 • PM: 0:31 treadmill tue: | • AM: 1:29 treadmill • AM: 1:29 treadmill wed: | • PM: 1:40 1,007ft thu: | • AM: 0:46 treadmill fri: | • PM: 0:33 309ft sat: | • AM: 0:49 362ft sun: | • AM: 0:58 treadmill • PM: 1:06 460ft totals: | • Time on feet: 9:24 • Elevation gain: 2,138 ft layout: log mon-note: tue-note: wed-note: thu-note: fri-note: sat-note: sun-note: description: —</summary></entry></feed>

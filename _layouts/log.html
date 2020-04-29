@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1 class="post-title">Week {{ page.wk }}: {{ page.title }}</h1>
+<h1 class="post-title">{{ page.title }}</h1>
 <p class="post-description">{{ page.description }}</p>
 <p>
   <img src="{{ page.image }}" alt="{{ page.caption }}">
@@ -20,32 +20,40 @@ layout: default
 
 <h1 class="training-day">Monday</h1>
 <p class ="training-log">{{ page.mon }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.mon-note }}</p>
 
 <h1 class="training-day">Tuesday</h1>
 <p class ="training-log">{{ page.tue }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.tue-note }}</p>
 
 <h1 class="training-day">Wednesday</h1>
 <p class ="training-log">{{ page.wed }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.wed-note }}</p>
 
 <h1 class="training-day">Thursday</h1>
 <p class ="training-log">{{ page.thu }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.thu-note }}</p>
 
 <h1 class="training-day">Friday</h1>
 <p class ="training-log">{{ page.fri }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.fri-note }}</p>
 
 <h1 class="training-day">Saturday</h1>
 <p class ="training-log">{{ page.sat }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.sat-note }}</p>
 
 <h1 class="training-day">Sunday</h1>
 <p class ="training-log">{{ page.sun }}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>{{ page.sun-note }}</p>
 
-{{ content }}
+<div class="training-totals">
+  <h1 class="training-day">Totals</h1>
+  <p class ="training-log">{{ page.totals }}</p>
+</div>
+
+{% if content.size > 1 %}
+  <h1>Notes</h1>
+  {{ content }}
+{% endif %}
 
 {% include relatedPosts.html %}

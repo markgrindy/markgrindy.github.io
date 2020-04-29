@@ -239,7 +239,6 @@ img.header-logo {
 	color: var(--black);
 	cursor: pointer;
 	display: block;
-	font-size: 0.8em;
 	padding: 0.5em 0 0 0;
 	text-decoration: none;
 	transition: 0.6s ease;
@@ -294,6 +293,10 @@ img.header-logo {
 
 .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
 	background-color: var(--ahover) !important;
+}
+
+.gsc-webResult .gsc-result {
+	border: 0 !important; 
 }
 
 .gsst_a .gscb_a {

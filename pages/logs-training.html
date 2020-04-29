@@ -4,7 +4,7 @@ permalink: /training/
 <div class="summary-wrapper">
   {% capture tag_name %}training logs{% endcapture %}
   <h1 class="category-head" id="#{{ tag_name | slugize }}">{{ tag_name }}</h1>
-  {% for post in site.tags[tag_name] %}
+  {% for post in site.tags[tag_name] reversed %}
     {% include summaryMini.html %}
   {% endfor %}
 </div>

@@ -1,4 +1,26 @@
-<h1 class="footer-head">Latest Training Logs</h1>
+<h1 class="footer-head">Latest Training Log</h1>
+<!-- <div class="summary-wrapper">
+  {% capture tag_name %}training logs{% endcapture %}
+  <h1 class="category-head" id="#{{ tag_name | slugize }}">{{ tag_name }}</h1>
+  {% for post in site.tags[tag_name] reversed %}
+    {% include summaryMini.html %}
+  {% endfor %}
+</div> -->
+{% for post in site.tags[tag_name] reversed limit: 1 %}
+  <p class="summary-separator"/>
+  <div class="summary-wrapper">
+    <a class="wrapper" href="{{ post.url }}">
+      <article class="main">
+        <p class="mini mini-footer">
+          {{ post.title }}
+          <span class="related-date">
+            {% include timeAgo.html %}
+          </span>
+        </p>
+      </article>
+    </a>
+  </div>
+{% endfor %}
 {% for post in site.logs limit: 3 %}
   <p class="summary-separator"/>
   <div class="summary-wrapper">

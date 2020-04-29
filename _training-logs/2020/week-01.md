@@ -6,15 +6,22 @@ caption: Battle Creek, Maplewood, Minn.
 image-credit: mg
 image-credit-link: /about/
 tags: [training logs]
-mon: ! 'PM: 1:40 1007ft'
-tue: ! 'AM: 0:46 treadmill'
-wed: ! 'PM: 0:33 309ft'
-thu: ! 'AM: 0:49 362ft'
-fri: ! 'AM: 0:58 treadmill
-PM: 1:06 460ft'
-sat: ! 'PM: 0:30 treadmill'
-sun: ! 'AM: 0:19 treadmill
-AM: 1:06 treadmill'
+mon: ! 
+	? PM: 1:40 1007ft
+tue: ! 
+	? AM: 0:46 treadmill
+wed: ! 
+	? PM: 0:33 309ft
+thu: ! 
+	? AM: 0:49 362ft
+fri: ! 
+	? AM: 0:58 treadmill
+	<br/>? PM: 1:06 460ft
+sat: ! 
+	? PM: 0:30 treadmill
+sun: ! 
+	? AM: 0:19 treadmill
+	<br/>? AM: 1:06 treadmill
 totals: Time on feet: 7:51
 Elevation gain: 2,138 ft
 layout: log

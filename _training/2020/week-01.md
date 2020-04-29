@@ -1,0 +1,22 @@
+---
+wk: 1
+title: Highly Resolved
+image: https://dgtzuqphqg23d.cloudfront.net/HMrRSKZ1g3e1Ceb83N2_2RWyNqrZi4eFHWODdoGHMmY-2048x1536.jpg
+caption: Battle Creek, Maplewood, Minn.
+image-credit: mg
+image-credit-link: /about/
+tags: [training logs]
+mon: ! 'PM: 1:40 1007ft'
+tue: ! 'AM: 0:46 treadmill'
+wed: ! 'PM: 0:33 309ft'
+thu: ! 'AM: 0:49 362ft'
+fri: ! 'AM: 0:58 treadmill
+PM: 1:06 460ft'
+sat: ! 'PM: 0:30 treadmill'
+sun: ! 'AM: 0:19 treadmill
+AM: 1:06 treadmill'
+total: ! 'Rest day'
+layout: log
+---
+
+testing.

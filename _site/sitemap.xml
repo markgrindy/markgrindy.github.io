@@ -45,6 +45,10 @@
 <lastmod>2020-04-19T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/04/20/week-01.html</loc>
+<lastmod>2020-04-20T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -63,10 +67,10 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/logs/food/</loc>
+<loc>http://localhost:4000/food/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/logs/training/</loc>
+<loc>http://localhost:4000/training/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/search/</loc>

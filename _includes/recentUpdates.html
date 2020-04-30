@@ -1,0 +1,21 @@
+<div class="latest-training-log">
+  <h1>Recent updates</h1>
+  {% capture tag_name %}training logs{% endcapture %}
+  {% for post in site.tags[tag_name] reversed limit: 1 %}
+    <p class="summary-separator"/>
+    <div class="summary-wrapper">
+      <a class="wrapper mini" href="{{ post.url }}">
+        <article class="main">
+          <p class="mini mini-footer">
+            <span class="tag-cat">Training Log</span>
+            <strong>{{ post.title }}</strong>
+            {{ post.description }}
+            <span class="related-date">
+              {% include timeAgo.html %}
+            </span>
+          </p>
+        </article>
+      </a>
+    </div>
+  {% endfor %}
+</div>

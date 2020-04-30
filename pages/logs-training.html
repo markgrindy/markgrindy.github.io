@@ -10,9 +10,11 @@ permalink: /training/
 </div>
 <div class="summary-wrapper">
   {% capture category_name %}training{% endcapture %}
-  <h1 class="category-head" id="#{{ category_name | slugize }}">{{ category_name }}</h1>
+  <h1 class="category-head" id="#{{ category_name | slugize }}">Other training reads</h1>
   {% for post in site.categories[category_name] %}
-    <!-- <a href="{{ site.baseurl }}{{ post.url }}"><h1>{{post.title}}</h1></a> -->
+    {% assign tagQ = post.tags %}
+    {% unless false %}
     {% include summaryMini.html %}
+    {% endunless %}
   {% endfor %}
 </div>

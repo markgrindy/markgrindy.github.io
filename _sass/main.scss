@@ -6,6 +6,7 @@
 	--blue: #2b64a9;
 	--yellow: #FAFF00;
 	--red: #E56262;
+	--green: #38A69B;
 	--a: var(--blue);
 	--ahover: #5d81ad;
 	--grey: #666;
@@ -491,14 +492,37 @@ p + h1.training-day {
 
 .training-totals {
 	background-color: var(--lightestGrey);
-	//border: 1px solid var(--lighterGrey); 
-	border-radius: .125em;
+	border-left: 2px solid var(--darkGrey);
 	margin: 1em 0;
-	padding: .25em;
+	padding: .333em;
 }
 
 .training-totals h1.training-day {
 	margin-top: 0;
+}
+
+.latest-training-log {
+	background-color: var(--lightestGrey);
+	border-radius: 0.25em;
+	margin-top: 1em;
+	padding: 1em 2em;
+}
+
+.latest-training-log h1 {
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+.tag-cat {
+	border-radius: 0.125em;
+	background-color: var(--green);
+	color: var(--lightestGrey);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 0.1em 0.333em;
+	text-transform: uppercase;
 }
 
 // RELATED POSTS
@@ -519,7 +543,7 @@ h1.summary-title.mini {
 }
 
 p.mini {
-	font-color: var(--black);
+	color: var(--black);
 	font-size: 0.8em;
 	font-weight: normal;
 }
@@ -540,11 +564,21 @@ p.mini {
 // FOOTER
 
 footer {
-  background-color: var(--lightestGrey);
-  border-top: .04125em var(--lightGrey) solid;
+  //background-color: var(--lightestGrey);
+  //border-top: 4px var(--lightGrey) double; // was .04125em
   color:var(--darkGrey);
   margin-top: 1em;
   padding-bottom: 1em;
+}
+
+footer::before {
+	//background-color: var(--white);
+  border-bottom: .0625rem solid var(--lighterGrey);
+  border-top: .125rem solid var(--lighterGrey);
+  content: '';
+  display: block;
+  height: .25rem;
+  margin-top: 0;
 }
 
 .footer-head {

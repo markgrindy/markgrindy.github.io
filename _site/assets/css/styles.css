@@ -32,7 +32,7 @@ input, button, textarea, select { font: inherit; }
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
 
-:root { --text: #CDD1CB; --bg: #282C34; --white: #fff; --blue: #5D81AD; --yellow: #FFC107; --red: #E56262; --green: #38A69B; --a: var(--blue); --ahover: #546A7B; --grey0-1: #f4f5f2; --grey0: #ccc; --grey1: #888; --grey2: #66666694; --grey3: #333; }
+:root { --text: #CDD1CB; --bg: #242424; --white: #fff; --blue: #5D81AD; --yellow: #FFC107; --red: #E56262; --green: #38A69B; --a: var(--blue); --ahover: #546A7B; --grey0-1: #f4f5f2; --grey0: #ccc; --grey1: #888; --grey2: #66666694; --grey3: #333; }
 
 html, body { background-color: var(--bg); color: var(--text); font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif; font-size: 1.125em; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word; }
 

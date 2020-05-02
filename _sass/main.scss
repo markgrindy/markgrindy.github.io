@@ -16,6 +16,19 @@
   --darkGrey: rgb(51, 51, 51);
 }
 
+/*
+:root{
+	--bg: #282C34;
+	--text: #CDD1CB;
+	--blue: #5D81AD;
+	--yellow: #F9DBBD;
+	--red: #E56262;
+	--green: #38A69B;
+	--a: var(--blue);
+	--ahover: #546A7B;
+}
+*/
+
 // :root {
 // 	--dark: #282C34;
 // 	--light: #CDD1CB;
@@ -479,7 +492,7 @@ margin-top: 1em;
 }
 .aside-2 {  }
 
-// TRAINING LOGS
+// TRAINING LOGS (log.html)
 
 .training-day {
 	margin-bottom: 0;
@@ -501,14 +514,16 @@ p + h1.training-day {
 	margin-top: 0;
 }
 
-.latest-training-log {
+// recentUpdates
+
+.recent-updates {
 	background-color: var(--lightestGrey);
 	border-radius: 0.25em;
 	margin-top: 1em;
 	padding: 1em 2em;
 }
 
-.latest-training-log h1 {
+.recent-updates h1 {
 	font-style: italic;
 	margin-top: 0;
 	margin-bottom: 0.5em;
@@ -525,7 +540,7 @@ p + h1.training-day {
 	text-transform: uppercase;
 }
 
-// RELATED POSTS
+// relatedPosts
 
 @media screen and (min-width: 620px) {
 	.summary-wrapper {

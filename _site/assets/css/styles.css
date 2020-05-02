@@ -34,6 +34,7 @@ input, button, textarea, select { font: inherit; }
 
 :root { --black: #121212; --white: #fff; --blue: #2b64a9; --yellow: #FAFF00; --red: #E56262; --green: #38A69B; --a: var(--blue); --ahover: #5d81ad; --grey: #666; --lightGrey: #888; --lighterGrey: #ccc; --lightestGrey: #f4f5f2; --darkGrey: rgb(51, 51, 51); }
 
+/* :root{ --bg: #282C34; --text: #CDD1CB; --blue: #5D81AD; --yellow: #F9DBBD; --red: #E56262; --green: #38A69B; --a: var(--blue); --ahover: #546A7B; } */
 /* Dark mode colors: --black: #242424; --white: #fff; --blue: #3ea6ff; --yellow: #615700; --red: #E56262; --a: var(--blue); --ahover: #3b689e; --grey: #aaa; */
 html, body { color: var(--black); font-family: TimesNewRoman, "Times New Roman", Times, Georgia, serif; font-size: 1.125em; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word; }
 
@@ -181,9 +182,9 @@ p + h1.training-day { border-top: 0.04125em var(--lighterGrey) solid; padding-to
 
 .training-totals h1.training-day { margin-top: 0; }
 
-.latest-training-log { background-color: var(--lightestGrey); border-radius: 0.25em; margin-top: 1em; padding: 1em 2em; }
+.recent-updates { background-color: var(--lightestGrey); border-radius: 0.25em; margin-top: 1em; padding: 1em 2em; }
 
-.latest-training-log h1 { font-style: italic; margin-top: 0; margin-bottom: 0.5em; }
+.recent-updates h1 { font-style: italic; margin-top: 0; margin-bottom: 0.5em; }
 
 .tag-cat { border-radius: 0.125em; background-color: var(--green); color: var(--lightestGrey); font-family: Helvetica, Arial, sans-serif; font-size: 0.8em; font-weight: bold; padding: 0.1em 0.333em; text-transform: uppercase; }
 

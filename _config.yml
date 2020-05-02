@@ -26,12 +26,12 @@ plugins:
   - jekyll-seo-tag
 
 # Settings for SEO
-title: "swatchword.com"
-tagline: "/swäCHˌwərd/ noun: a sample expression of a core belief."
+title: "pr.markgrindy.com"
+tagline: "Personal record"
 description: "Project reports, training logs, and other entries."
-url: "https://swatchword.com" # the base hostname & protocol for your site
+url: "https://pr.markgrindy.com" # the base hostname & protocol for your site
 favicon: /favicon.png
-logo: /assets/img/markgrindy-logo.svg
+logo: /assets/img/pr-markgrindy-logo-white.svg
 
 # Settings for Related Posts
 related:

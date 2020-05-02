@@ -1,0 +1,34 @@
+---
+permalink: /training/2020
+cat_name: "training"
+tag_name: "training logs"
+---
+{% assign thisYear = "now" | date: "%Y" %}
+{% assign lastYear = "now" | date: "%Y" | minus: 1 %}
+{% assign counter = 0 %}
+<p>&nbsp;</p>
+<div class="summary-wrapper">
+  <h1 class="category-head" id="#{{ tag_name | slugize }}">{{ thisYear }} {{ page.tag_name }}</h1>
+  {% for post in site.tags[page.tag_name] reversed %}
+    {% assign unixPost = post.date | date: '%s' %}
+    {% assign unixYear = thisYear | append: "-01-01" | date: "%s" %}
+    {% unless unixPost <= unixYear %}
+      {% include summaryMiniPhoto.html %}
+      {% assign counter = counter | plus: 1 %}
+    {% endunless %}
+  {% endfor %}
+</div>
+<p>&nbsp;</p>
+<div class="summary-wrapper">
+  {% if site.categories[page.cat_name].size > counter %}
+    <h1 class="category-head" id="#{{ category_name | slugize }}">Other {{ thisYear }} training reads</h1>
+  {% endif %}
+  <div class="other-reads" style="font-size: .8em;">
+    {% for post in site.categories[page.cat_name] limit: 5 %}
+      {% unless post.tags.first == page.tag_name or unixPost <= unixYear%}
+        {% include summarySub.html %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
+<p>&nbsp;</p>

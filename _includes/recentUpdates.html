@@ -1,24 +1,5 @@
 <div class="recent-updates">
-  <h1>Recent updates</h1>
-  {% capture tag_name %}training logs{% endcapture %}
-  {% for post in site.tags[tag_name] limit: 1 %}
-    <p class="summary-separator"/>
-    <div class="summary-wrapper">
-      <a class="wrapper mini" href="{{ post.url }}">
-        <article class="main">
-          <p class="mini mini-footer">
-            <span class="tag-cat">Training Log</span>
-            <strong>{{ post.title }}</strong>
-            {{ post.description }}
-            <span class="related-date">
-              {% include timeAgo.html %}
-            </span>
-          </p>
-        </article>
-      </a>
-    </div>
-  {% endfor %}
-
+  <h1 class="category-head">Recent updates</h1>
   {% for category in site.categories %}
     {% for post in category.last limit: 1 %}
       <p class="summary-separator"/>
@@ -38,3 +19,4 @@
       </div>
     {% endfor %}
   {% endfor %}
+</div>

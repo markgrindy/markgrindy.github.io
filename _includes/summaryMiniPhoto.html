@@ -7,8 +7,8 @@
       <p class="related-date">{{ post.date | date: "%B %e, %Y" }}</p>
       </h1>
     </article>
-    <aside class="aside aside-2">
-      <img class="summary-photo mini" src="{{ post.image }}" alt="{{ page.caption }}"/>
-    </aside>
+    <div class="aside" style="background-image: url({{ post.image }});">
+      <!-- <img class="summary-photo mini" src="{{ post.image }}" alt="{{ page.caption }}"/> -->
+    </div>
   </a>
 </div>

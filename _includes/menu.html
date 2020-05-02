@@ -7,16 +7,18 @@
 
 <div class="menu-section">
   <h1 class="menu-header category-head">Topics</h1>
-      <a href="/training">Training</a>
-      <a href="/finance">Finance</a>
-      <p> &nbsp; </p>
+    {% for item in site.data.menuTopics %}
+      <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+    <p> &nbsp; </p>
 </div>
 
 <div class="menu-section">
   <h1 class="menu-header category-head">Meta</h1>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-      <p> &nbsp; </p>
+    {% for item in site.data.menuMeta %}
+      <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+    <p> &nbsp; </p>
 </div>
 
 

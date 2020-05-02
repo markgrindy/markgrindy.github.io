@@ -180,7 +180,7 @@ p + h1.training-day { border-top: 0.04125em var(--grey2) solid; padding-top: 1em
 
 .training-totals h1.training-day { margin-top: 0; }
 
-.recent-updates { background-color: var(--grey2); border-radius: 0.25em; margin-top: 1em; padding: 1em 2em; }
+.recent-updates { background-color: var(--grey2); border-radius: 0.25em; margin-top: 1em; padding: 1em 1.5em; }
 
 .recent-updates h1 { font-style: italic; margin-top: 0; margin-bottom: 0.5em; }
 
@@ -188,7 +188,7 @@ p + h1.training-day { border-top: 0.04125em var(--grey2) solid; padding-top: 1em
 
 @media screen and (min-width: 620px) { .summary-wrapper { margin: 0 auto; } .main { min-width: 480px; } }
 
-h1.summary-title.mini { font-size: 1em; font-weight: normal; margin: 0; }
+h1.summary-title.mini { font-size: 1em; font-weight: normal; margin: 0; padding-right: 0.5em; }
 
 p.mini { color: var(--text); font-size: 0.8em; font-weight: normal; }
 

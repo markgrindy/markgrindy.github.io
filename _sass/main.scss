@@ -493,7 +493,7 @@ p + h1.training-day {
 	background-color: var(--grey2);
 	border-radius: 0.25em;
 	margin-top: 1em;
-	padding: 1em 2em;
+	padding: 1em 1.5em;
 }
 
 .recent-updates h1 {
@@ -528,6 +528,7 @@ h1.summary-title.mini {
 	font-size: 1em;
 	font-weight: normal;
 	margin: 0;
+	padding-right: 0.5em
 }
 
 p.mini {

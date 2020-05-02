@@ -80,6 +80,6 @@
 <loc>http://localhost:4000/topics/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/training/2020</loc>
+<loc>http://localhost:4000/training</loc>
 </url>
 </urlset>

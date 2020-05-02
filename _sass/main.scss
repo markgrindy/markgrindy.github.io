@@ -13,7 +13,7 @@
 	--grey0-1: #f4f5f2;
 	--grey0: #ccc;
   --grey1: #888;
-  --grey2: #666;
+  --grey2: #66666694;
 	--grey3: #333;
 }
 
@@ -153,7 +153,7 @@ h5::before {
 .menu-button {
   position: absolute;
   left: 16px;
-  top: 11px;
+  top: 9px;
   font-size: 1.1em;
   cursor:pointer
 }
@@ -333,7 +333,7 @@ h1.summary-title {
 	font-size: 1.25em;
 	line-height: 1em;
 	margin-bottom: 0.5em;
-	margin-top: 0;
+	margin-top: 0.25em;
 }
 
 p.summary-description {
@@ -357,7 +357,7 @@ p.summary-caption {
 }
 
 div.summary-wrapper + p.summary-separator {
-	border-bottom: .04125em var(--grey2) solid;
+	border-bottom: .04125em var(--grey1) solid;
 	margin-bottom: 1em;
 	padding-bottom: .9em;
 }
@@ -477,7 +477,7 @@ p + h1.training-day {
 }
 
 .training-totals {
-	background-color: var(--grey3);
+	background-color: var(--grey2);
 	border-left: 2px solid var(--grey0-1);
 	margin: 1em 0;
 	padding: .333em;
@@ -490,7 +490,7 @@ p + h1.training-day {
 // recentUpdates
 
 .recent-updates {
-	background-color: var(--grey3);
+	background-color: var(--grey2);
 	border-radius: 0.25em;
 	margin-top: 1em;
 	padding: 1em 2em;

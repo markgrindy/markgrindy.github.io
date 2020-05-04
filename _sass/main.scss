@@ -476,6 +476,23 @@ p + h1.training-day {
 	padding-top: 1em;
 }
 
+table.hrv {
+	background-color: var(--grey2);
+	// border: 2px solid var(--grey3);
+	// border-radius: 0.25em;
+	// font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	margin: 0 auto;
+	border-left: 2px solid var(--grey0-1);
+}
+
+.hrv th, .hrv td {width: 60px;text-align: center;}
+
+tr.hrv-header {
+	// background-color: var(--green);
+	// color: var(--grey2);
+}
+
 .training-totals {
 	background-color: var(--grey2);
 	border-left: 2px solid var(--grey0-1);
@@ -562,8 +579,8 @@ footer {
 
 footer::before {
 	//background-color: var(--bg);
-  border-bottom: .0625rem solid var(--grey2);
-  border-top: .125rem solid var(--grey2);
+  border-bottom: .0625rem solid var(--grey1);
+  border-top: .125rem solid var(--grey1);
   content: '';
   display: block;
   height: .25rem;

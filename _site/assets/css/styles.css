@@ -176,6 +176,10 @@ p + p { margin-top: 1em; }
 
 p + h1.training-day { border-top: 0.04125em var(--grey2) solid; padding-top: 1em; }
 
+table.hrv { background-color: var(--grey2); font-size: 0.9em; margin: 0 auto; border-left: 2px solid var(--grey0-1); }
+
+.hrv th, .hrv td { width: 60px; text-align: center; }
+
 .training-totals { background-color: var(--grey2); border-left: 2px solid var(--grey0-1); margin: 1em 0; padding: .333em; }
 
 .training-totals h1.training-day { margin-top: 0; }
@@ -198,7 +202,7 @@ p.mini { color: var(--text); font-size: 0.8em; font-weight: normal; }
 
 footer { color: var(--grey0-1); margin-top: 1em; padding-bottom: 1em; }
 
-footer::before { border-bottom: 0.0625rem solid var(--grey2); border-top: 0.125rem solid var(--grey2); content: ''; display: block; height: .25rem; margin-top: 0; }
+footer::before { border-bottom: 0.0625rem solid var(--grey1); border-top: 0.125rem solid var(--grey1); content: ''; display: block; height: .25rem; margin-top: 0; }
 
 .footer-head { font-size: .9em; font-style: italic; }
 

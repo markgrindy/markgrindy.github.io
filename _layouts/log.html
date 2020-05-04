@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <h1 class="post-title">{{ page.title }}</h1>
 <p class="post-description">{{ page.description }}</p>
 <p>
@@ -48,6 +49,11 @@ layout: default
   <h1 class="training-day">Totals</h1>
   <p class ="training-log">{{ page.totals }}</p>
 </div>
+
+<table class="hrv">
+  <tr class="hrv-header"><th>DAY</th><th>R#</th><th>HRV</th><th>AVG</th><th>CV</th><th>HR</th></tr>
+  {{ page.hrv }}
+</table>
 
 {% if content.size > 1 %}
   <h1>Notes</h1>

@@ -467,41 +467,49 @@ margin-top: 1em;
 
 // TRAINING LOGS (log.html)
 
+.training-logs h1 {
+	margin-top: 0;
+}
+
+.training-dates {
+	background-color: var(--blue) !important;
+	display: inline-block;
+}
+
 .training-day {
 	margin-bottom: 0;
 }
 
 p + h1.training-day {
-	border-top: 0.04125em var(--grey2) solid;
+	border-top: 0.04125em var(--grey3) solid;
 	padding-top: 1em;
+	margin-top: 1em;
 }
 
 table.hrv {
 	background-color: var(--grey2);
-	// border: 2px solid var(--grey3);
-	// border-radius: 0.25em;
-	// font-family: Helvetica, Arial, sans-serif;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	margin: 0 auto;
-	border-left: 2px solid var(--grey0-1);
+	padding: 0.25em 0;
+	width: 376px;
 }
+
+#hrv-tag {text-align: left; padding-left: 0.8em;}
+
+.tag-cat.bg, .tag-cat.bg a {color: var(--bg);font-size: 0.8em;text-decoration: none;}
 
 .hrv th, .hrv td {width: 60px;text-align: center;}
 
-tr.hrv-header {
-	// background-color: var(--green);
-	// color: var(--grey2);
-}
+tr td {border-top: 1px solid var(--grey3);}
 
-.training-totals {
+.training-logs {
+	font-size: 0.8em;
+	max-width: 376px;
 	background-color: var(--grey2);
-	border-left: 2px solid var(--grey0-1);
-	margin: 1em 0;
-	padding: .333em;
-}
-
-.training-totals h1.training-day {
-	margin-top: 0;
+	margin: 0 auto;
+	margin-bottom: 0.25em;
+	padding: 1em;
+	padding-bottom: 0.01em;
 }
 
 // recentUpdates
@@ -521,13 +529,25 @@ tr.hrv-header {
 
 .tag-cat {
 	border-radius: 0.125em;
-	background-color: var(--green);
+	background-color: var(--blue);
 	color: var(--grey3);
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 0.8em;
 	font-weight: bold;
 	padding: 0.1em 0.333em;
 	text-transform: uppercase;
+}
+
+.tag-cat.tag-red {
+	background-color: var(--red);
+}
+
+.tag-cat.tag-yel {
+	background-color: var(--yellow);
+}
+
+.tag-cat.tag-gre {
+	background-color: var(--green);
 }
 
 // relatedPosts

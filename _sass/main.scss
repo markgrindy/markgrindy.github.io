@@ -491,7 +491,8 @@ table.hrv {
 	font-size: 0.8em;
 	margin: 0 auto;
 	padding: 0.25em 0;
-	width: 376px;
+	max-width: 376px;
+	width: 100%; 
 }
 
 #hrv-tag {text-align: left; padding-left: 0.8em;}
@@ -531,6 +532,7 @@ tr td {border-top: 1px solid var(--grey3);}
 	border-radius: 0.125em;
 	background-color: var(--blue);
 	color: var(--grey3);
+	display: inline-block;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 0.8em;
 	font-weight: bold;

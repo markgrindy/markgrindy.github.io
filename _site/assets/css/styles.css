@@ -180,7 +180,7 @@ p + p { margin-top: 1em; }
 
 p + h1.training-day { border-top: 0.04125em var(--grey3) solid; padding-top: 1em; margin-top: 1em; }
 
-table.hrv { background-color: var(--grey2); font-size: 0.8em; margin: 0 auto; padding: 0.25em 0; width: 376px; }
+table.hrv { background-color: var(--grey2); font-size: 0.8em; margin: 0 auto; padding: 0.25em 0; max-width: 376px; width: 100%; }
 
 #hrv-tag { text-align: left; padding-left: 0.8em; }
 
@@ -196,7 +196,7 @@ tr td { border-top: 1px solid var(--grey3); }
 
 .recent-updates h1 { font-style: italic; margin-top: 0; margin-bottom: 0.5em; }
 
-.tag-cat { border-radius: 0.125em; background-color: var(--blue); color: var(--grey3); font-family: Helvetica, Arial, sans-serif; font-size: 0.8em; font-weight: bold; padding: 0.1em 0.333em; text-transform: uppercase; }
+.tag-cat { border-radius: 0.125em; background-color: var(--blue); color: var(--grey3); display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 0.8em; font-weight: bold; padding: 0.1em 0.333em; text-transform: uppercase; }
 
 .tag-cat.tag-red { background-color: var(--red); }
 

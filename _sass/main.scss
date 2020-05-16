@@ -141,7 +141,7 @@ h5::before {
   justify-content: center;
 }
 
-#myNav a, #myNave a:hover {
+#myNav a, #myNav a:hover {
 	color: var(--text);
 	cursor: pointer;
 }
@@ -419,7 +419,157 @@ p + p {
 margin-top: 1em;
 }
 
-// TESTING FLEX BOXES
+// TAG-CAT for TRAINING LOGS (log.html)
+
+.tag-cat {
+	border-radius: 0.125em;
+	background-color: var(--blue);
+	color: var(--bg);
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 0 0.333em;
+	padding-top: 0.125em;
+	text-transform: uppercase;
+}
+
+.tag-cat a {
+	color: var(--bg);
+	text-decoration: none;
+}
+
+.tag-cat.tag-red {
+	background-color: var(--red);
+}
+
+.tag-cat.tag-yel {
+	background-color: var(--yellow);
+}
+
+.tag-cat.tag-gre {
+	background-color: var(--green);
+}
+
+.tag-cat.tag-gry {
+	background-color: var(--grey1);
+}
+
+@media screen and (min-width: 350px) {
+	.tag-cat, .tag-cat a {
+		// font-size: 0.8em;
+	}
+}
+
+// TRAINING LOGS (log.html)
+
+.np-wrapper {
+	display: flex;
+	background-color: var(--grey2);
+	margin: 0.25em auto;
+	padding: 0.25em;
+	max-width: 376px;
+}
+
+.np-wrapper span {
+	transition: 0.6s ease;
+}
+
+.np-wrapper span:hover {
+	background-color: var(--grey0);
+}
+
+.np {
+	flex: 0 1 auto;
+	margin: auto 0;
+	text-align: center;
+}
+
+.np-spacer {
+	flex: 1 0 auto;
+}
+
+.np-oldernewer {
+	// font-size: 0.8em;
+	// padding-top: 0.2em;
+}
+
+.np-icon {
+	color: white;
+	display: inline;
+	max-height: 1em;
+}
+
+.np-older {
+	// margin-right: 0.5em;
+}
+
+.np-newer {
+	// margin-left: 0.5em;
+}
+
+.np.tag-cat {
+	display: inline-block;
+}
+
+.np.tag-cat + .np.tag-cat {
+	margin-left: 0.5em;
+}
+
+.np.tag-cat a:hover {
+	color: var(--grey3);
+}
+
+// TRAINING LOGS (log.html)
+
+.training-logs {
+	font-size: 0.8em;
+	max-width: 376px;
+	background-color: var(--grey2);
+	margin: 0 auto;
+	margin-bottom: 0.25em;
+	padding: 1em;
+	padding-bottom: 0.01em;
+}
+
+.training-logs h1 {
+	margin-top: 0;
+}
+
+.training-dates {
+	background-color: var(--blue) !important;
+	display: inline-block;
+}
+
+.training-day {
+	margin-bottom: 0;
+}
+
+p + h1.training-day {
+	border-top: 0.04125em var(--grey3) solid;
+	padding-top: 1em;
+	margin-top: 1em;
+}
+
+table.hrv {
+	background-color: var(--grey2);
+	font-size: 0.8em;
+	margin: 0 auto;
+	padding: 0.25em 0;
+	max-width: 376px;
+	width: 100%;
+}
+
+#hrv-tag {
+	text-align: left;
+	padding-left: 0.8em;
+}
+
+.hrv th, .hrv td {width: 60px;text-align: center;}
+
+tr td {border-top: 1px solid var(--grey3);}
+
+// FLEX BOXES FOR ???
 
 .wrapper {
   display: flex;
@@ -465,54 +615,6 @@ margin-top: 1em;
 	order: 2;
 }
 
-// TRAINING LOGS (log.html)
-
-.training-logs h1 {
-	margin-top: 0;
-}
-
-.training-dates {
-	background-color: var(--blue) !important;
-	display: inline-block;
-}
-
-.training-day {
-	margin-bottom: 0;
-}
-
-p + h1.training-day {
-	border-top: 0.04125em var(--grey3) solid;
-	padding-top: 1em;
-	margin-top: 1em;
-}
-
-table.hrv {
-	background-color: var(--grey2);
-	font-size: 0.8em;
-	margin: 0 auto;
-	padding: 0.25em 0;
-	max-width: 376px;
-	width: 100%; 
-}
-
-#hrv-tag {text-align: left; padding-left: 0.8em;}
-
-.tag-cat.bg, .tag-cat.bg a {color: var(--bg);font-size: 0.8em;text-decoration: none;}
-
-.hrv th, .hrv td {width: 60px;text-align: center;}
-
-tr td {border-top: 1px solid var(--grey3);}
-
-.training-logs {
-	font-size: 0.8em;
-	max-width: 376px;
-	background-color: var(--grey2);
-	margin: 0 auto;
-	margin-bottom: 0.25em;
-	padding: 1em;
-	padding-bottom: 0.01em;
-}
-
 // recentUpdates
 
 .recent-updates {
@@ -526,30 +628,6 @@ tr td {border-top: 1px solid var(--grey3);}
 	font-style: italic;
 	margin-top: 0;
 	margin-bottom: 0.5em;
-}
-
-.tag-cat {
-	border-radius: 0.125em;
-	background-color: var(--blue);
-	color: var(--grey3);
-	display: inline-block;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 0.8em;
-	font-weight: bold;
-	padding: 0.1em 0.333em;
-	text-transform: uppercase;
-}
-
-.tag-cat.tag-red {
-	background-color: var(--red);
-}
-
-.tag-cat.tag-yel {
-	background-color: var(--yellow);
-}
-
-.tag-cat.tag-gre {
-	background-color: var(--green);
 }
 
 // relatedPosts

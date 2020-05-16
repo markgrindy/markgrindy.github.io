@@ -22,3 +22,7 @@ module Jekyll
     end
   end
 end
+
+##
+# source for the code:
+# https://ajclarkson.co.uk/blog/jekyll-category-post-navigation/

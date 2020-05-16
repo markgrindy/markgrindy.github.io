@@ -15,25 +15,49 @@ layout: default
   {% endif %}
 </p>
 
-<p>
-  Jump to:
-  <span class="tag-cat tag-gre bg"><a href="#logs">Training Logs</a></span> &bull;
-  <span class="tag-cat tag-red bg"><a href="#hrv">HRV Logs</a></span> &bull;
-  <span class="tag-cat tag-yel bg"><a href="#logs">Notes</a></span>
-</p>
+{% if page.next_in_category != nil %}
+  {% assign next_url = page.next_in_category.url %}
+  {% assign next_class = "next-link" %}
+	<!-- <a href="{{next_url}}" class="{{next_class}}">Older Post</a> -->
+{% endif %}
+{% if page.previous_in_category != nil %}
+  {% assign previous_url = page.previous_in_category.url %}
+  {% assign previous_class = "previous-link" %}
+  <!-- <a href="{{previous_url}}" class="{{previous_class}}">Newer Post</a> -->
+{% endif %}
+
 <br/>
-
+{% assign weekNum = page.title | slice: 5,2 %}
 <div class="training-logs">
-
-  <h1 class="training-day">Week of {{ page.date | date: "%s" | minus : 604800 | date: "%B %e, %Y" }}</h1>
+  <h1 class="training-day">TRAINING LOG #{{ weekNum }} <br/>Week of {{ page.date | date: "%B %e, %Y" }}</h1>
   <p class ="training-log">{{ page.totals }}</p>
   <br/>
 
 </div>
 
+<div class="np-wrapper">
+  <span class="np-spacer"></span>
+  <span class="np np-oldernewer np-older tag-cat tag-gry test">
+    <a href="{{next_url}}" class="{{next_class}}">
+      <i class="fas fa-backward"></i>
+      wk
+    </a>
+  </span>
+    <span class="np tag-cat tag-gre"><a href="#logs">Training</a></span>
+    <span class="np tag-cat tag-red"><a href="#hrv">HRV</a></span>
+    <span class="np tag-cat tag-yel"><a href="#notes">Notes</a></span>
+  <span class="np np-oldernewer np-newer tag-cat tag-gry">
+    <a href="{{previous_url}}" class="{{previous_class}}">
+      wk
+      <i class="fas fa-forward"></i>
+    </a>
+  </span>
+  <span class="np-spacer"></span>
+</div>
+
 <div class="training-logs">
 
-  <span class="tag-cat tag-gre" id="logs">Training Logs</span>
+  <span class="tag-cat tag-gre" id="logs">Training</span>
   <h1 class="training-day">Monday</h1>
   <p class ="training-log">{{ page.mon }}</p>
   <p>{{ page.mon-note }}</p>
@@ -76,7 +100,7 @@ layout: default
 </table>
 
 {% if content.size > 1 %}
-  <h1><span class="tag-cat tag-yel bg" id="notes">Notes</span></h1>
+  <h1><span class="tag-cat tag-yel" id="notes">Notes</span></h1>
   {{ content }}
   <br/>
 {% endif %}

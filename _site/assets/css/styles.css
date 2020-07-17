@@ -180,7 +180,7 @@ p + p { margin-top: 1em; }
 
 .np-wrapper span { transition: 0.6s ease; }
 
-.np-wrapper span:hover { background-color: var(--grey0); }
+.np-wrapper span.np:hover { background-color: var(--grey0); }
 
 .np { flex: 0 1 auto; margin: auto 0; text-align: center; }
 
